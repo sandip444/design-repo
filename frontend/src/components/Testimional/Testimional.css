@@ -1,0 +1,9 @@
+.testimional {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.testimional h1 {
+    text-align: center;
+    font-size: 3em;
+}
