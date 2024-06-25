@@ -1,0 +1,43 @@
+.header{
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.header h1{
+    font-size: 60px;
+}
+
+.header h3{
+    width: 80%;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+/* button {
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 12px 12px 12px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  button span {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  } */
+  

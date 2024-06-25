@@ -1,0 +1,143 @@
+/* General styles for the entire contact section */
+.contact {
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    padding: 40px 20px; /* Space around content */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: #f8f8f8; /* Light background color */
+    display: flex; /* Flex container for vertical centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Flex container for arranging contact components */
+.contact-flex {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 40px; /* Gap between items */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    width: 100%; /* Full width within its container */
+    max-width: 1200px; /* Limit maximum width */
+}
+
+/* Left side content (text) */
+.contact-left {
+    flex: 1; /* Take up remaining space */
+    min-width: 300px; /* Minimum width */
+    max-width: 500px; /* Maximum width */
+}
+
+/* Heading within the left content */
+.contact-left h1 {
+    font-size: 24px; /* Heading font size */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Right side content (form) */
+.contact-right {
+    flex: 2; /* Take up more space than the left side */
+    min-width: 300px; /* Minimum width */
+    max-width: 600px; /* Maximum width */
+}
+
+/* Styling for the form itself */
+form {
+    background-color: white; /* White background */
+    padding: 50px 40px; /* Padding inside the form */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    min-height: 70vh; /* Minimum height of 70% viewport height */
+    display: flex; /* Flex container for vertical centering */
+    flex-direction: column; /* Stack form elements vertically */
+    justify-content: center; /* Center elements vertically */
+}
+
+/* Flex container for form fields */
+.multi-fields {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Gap between fields */
+    margin-bottom: 15px; /* Space at the bottom of the container */
+}
+
+/* Individual form field group */
+.form-group {
+    position: relative; /* Relative positioning for label */
+    flex: 1; /* Take up equal space */
+    min-width: calc(50% - 10px); /* Calculate width for two columns */
+    display: flex; /* Flex container for stretching */
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+/* Styling for input and textarea fields */
+input, textarea {
+    width: 100%; /* Full width of container */
+    padding: 15px; /* Padding inside the field */
+    font-size: 20px;
+    border: 1px solid #c5c5c5; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    outline: none; /* Remove default outline */
+    background: transparent; /* Transparent background */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    box-sizing: border-box; /* Include padding in width calculation */
+    flex: 1; /* Allow stretching to fill the form-group container */
+}
+
+/* Focus styles for input and textarea */
+input:focus, textarea:focus {
+    border-color: black; /* Dark border on focus */
+}
+
+/* Styling for labels */
+label {
+    position: absolute; /* Absolute positioning for label */
+    top: 10px; /* Distance from input field */
+    left: 10px; /* Distance from input field */
+    color: #999; /* Light gray color */
+    pointer-events: none; /* Disable pointer events */
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    background-color: white; /* White background for visibility */
+    padding: 0 5px; /* Padding around text */
+}
+
+/* Label positioning on focus or when input is filled */
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+    top: -15px; /* Move label up */
+    left: 20px;
+    font-size: 16px; /* Smaller font size */
+    color: gray; /* Darker color for better readability */
+    transition: 0.5s ease;
+}
+
+/* Styling for textarea */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    margin-bottom: 15px; /* Space at the bottom of the textarea */
+}
+
+form button {
+    display: flex; /* Flex container for alignment */
+    justify-content: center;
+    align-items: center; /* Center align content vertically */
+    margin-top: 10px; /* Space above the button */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .contact-flex {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items horizontally */
+    }
+
+    .multi-fields {
+        flex-direction: column; /* Stack fields vertically on smaller screens */
+    }
+
+    .form-group {
+        min-width: 100%; /* Full width for input fields on smaller screens */
+    }
+}
