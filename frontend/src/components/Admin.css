@@ -1,0 +1,82 @@
+.description {
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3em; /* Adjust this value based on your line height */
+  }
+  .blog-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .blog-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .blog-description {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .edit-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-form input,
+  .edit-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .blog-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button,
+  .delete-button,
+  .update-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+  }
+  
+  .delete-button:hover,
+  .edit-button:hover,
+  .update-button:hover {
+    opacity: 0.8;
+  }
+  
