@@ -18,7 +18,7 @@ const Navbar = () => {
     <div>
       <nav>
         <div className="logo">
-          <img src={assets.logo} alt="" />
+          <img src={assets.logo} alt="Logo" />
         </div>
 
         <ul>
@@ -36,16 +36,16 @@ const Navbar = () => {
               alt="Behance"/>
           </li>
 
-          <li
-            onMouseEnter={() => handleMouseEnter('Email')}
+          <li onMouseEnter={() => handleMouseEnter('Email')}
             onMouseLeave={handleMouseLeave}>
             <img src={hoveredItem === 'Email' ? assets.Email_icon_color : assets.Email_icon_black}
               alt="Email"/>
           </li>
 
-          <button>Schedule a call <span><MdArrowForwardIos /></span></button>
+          <li>
+            <button className='nav-btn'>Schedule a call <span><MdArrowForwardIos /></span></button>
+          </li>
         </ul>
-
       </nav>
     </div>
   );
