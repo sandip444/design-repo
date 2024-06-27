@@ -1,28 +1,28 @@
 .task {
-    text-align: center;
-    width: 100%;
-    height: 60vh;
-    display: grid;
-    place-items: center ;
-  }
-  
-  .task-container {
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Full box-shadow */
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    height: 20vh;
-    padding: 20px; /* Increased padding for better spacing */
-    border-radius: 20px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allow flex items to wrap */
-  }
-  
+  text-align: center;
+  width: 95%;
+  height: 60vh;
+  display: grid;
+  place-items: center ;
+}
 
-  .task-box h1:last-child {
-    font-weight: lighter;
-    font-size: 20px;
-    margin-top: 10px;
-  }
+.task-container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 20vh;
+  padding: 20px; 
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+
+.task-box h1:last-child {
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 10px;
+}
