@@ -9,6 +9,10 @@ export default {
       'red-rose': ['"Red Rose"', 'sans-serif'],
       'inter': ['"Inter"', 'sans-serif'],
     },
+    colors: {
+      'student-bg': 'rgba(247, 144, 9, 0.1)',
+      'preceptor-bg': 'rgba(18, 183, 106, 0.1)',
+    },
     boxShadow: {
       'custom': '0 0 10px rgba(0, 0, 0, 0.2)',
     }},
