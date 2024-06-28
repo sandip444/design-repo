@@ -101,7 +101,7 @@ const BlogList = () => {
                 <div className="blog-description" dangerouslySetInnerHTML={{ __html: blog.description }} />
                 <div className="blog-actions">
                 
-                  <button  className="text-white px-5 py-1 rounded-full edit-button">Edit</button>
+                  <button onClick={() => handleEdit(blog)}  className="text-white px-5 py-1 rounded-full edit-button">Edit</button>
                   <button onClick={() => handleDelete(blog._id)} className="text-white px-5 py-1 rounded-full delete-button">Delete</button>
                 </div>
               </>
