@@ -66,7 +66,7 @@ const BlogList = () => {
 
   return (
     <div className="blog-list">
-      <h2>Blog List</h2>
+      <h2 className="text-[32px] text-center mx-auto my-3">Blog List</h2>
       {blogs.map(blog => (
         <div key={blog._id} className="blog-item">
           <img src={blog.img} alt={blog.title} className="blog-img" />
@@ -93,15 +93,16 @@ const BlogList = () => {
                   onChange={handleChange}
                   placeholder="Image URL"
                 />
-                <button onClick={() => handleUpdate(blog._id)} className="update-button">Update</button>
+                <button onClick={() => handleUpdate(blog._id)} className="text-white px-5 py-1 rounded-full update-button">Update</button>
               </div>
             ) : (
               <>
                 <h3>{blog.title}</h3>
                 <div className="blog-description" dangerouslySetInnerHTML={{ __html: blog.description }} />
                 <div className="blog-actions">
-                  <button onClick={() => handleEdit(blog)} className="edit-button">Edit</button>
-                  <button onClick={() => handleDelete(blog._id)} className="delete-button">Delete</button>
+                
+                  <button  className="text-white px-5 py-1 rounded-full edit-button">Edit</button>
+                  <button onClick={() => handleDelete(blog._id)} className="text-white px-5 py-1 rounded-full delete-button">Delete</button>
                 </div>
               </>
             )}

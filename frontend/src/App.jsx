@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import Footer from './components/Footer/Footer'
 import AdminPanel from './components/Admin'
+import ViewBlog from './components/ViewBlog/ViewBlog'
 
 const App = () => {
   return (
@@ -17,6 +18,9 @@ const App = () => {
         </Routes>
         <Routes>
           <Route path='/admin' element={<AdminPanel />} />
+        </Routes>
+        <Routes>
+          <Route path='/view_blog' element={<ViewBlog />} />
         </Routes>
       </BrowserRouter>
     

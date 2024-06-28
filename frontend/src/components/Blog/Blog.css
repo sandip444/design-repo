@@ -22,32 +22,30 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 10px);
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   /* Image container */
-  .blog-img {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .blog-imgHome {
+    width: auto;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
     background: #eaeaea;
   }
   
   .blog-img img {
-    width: 100%;
+    width: 375px;
     height: auto;
   }
   
   /* Professional info styling */
   .blog-flex {
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     font-size: 0.9em;
@@ -76,6 +74,9 @@
     color: #666;
     margin: 0 0 20px;
   }
+
+
+
   
   /* Read more link styling */
   .blog a {
