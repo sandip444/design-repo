@@ -1,5 +1,5 @@
 .digital {
-    width: 100%;
+    width: auto;
     min-height: 100vh;
     text-align: center;
     padding: 40px 20px;
@@ -14,21 +14,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; /* Increased gap between items */
+    gap: 50px;
   }
   
   .digital-box {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1); /* Box shadow added */
-    width: calc(50% - 25px); /* Adjusted width calculation for increased gap and box shadow */
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.1); 
     display: flex;
     flex-direction: column;
   }
   
   .digital-img {
-    width: 100%;
+    width: auto;
     height: 400px;
     overflow: hidden;
   }
@@ -57,7 +56,7 @@
   
   @media (max-width: 768px) {
     .digital-box {
-      width: 100%; /* Full width on smaller screens */
+      width: 100%; 
     }
   }
   

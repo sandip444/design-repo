@@ -14,6 +14,12 @@ import Dribble3 from './Dribbble3.png'
 import Dribble4 from './Dribbble4.png'
 import Dribble5 from './Dribbble5.png'
 import Dribble6 from './Dribbble6.png'
+import UserResearch from "../assets/userResearch.png";
+import UXStrategy from "../assets/uxStrategy.png";
+import WireFraming from "../assets/wireframing.png";
+import Visual from "../assets/visual.png";
+import DesignSystem from "../assets/designSystem.png";
+
 
 import upwork from './upwork.png'
 import star from './4.9star.png'
@@ -75,31 +81,31 @@ export const portfolio_list = [
 export const digital_list=[
     {
         id: 1,
-        img: '',
+        img: UserResearch,
         name: 'User Research',
         description:'UI/UX design uses research and analysis to create experiences.'  
     },
     {
         id: 2,
-        img: '',
+        img: UXStrategy,
         name: 'UX Strategy',
         description:'A comptehensive UX strategy involves research, analysis, architecture, and continuous testing'  
     },
     {
         id: 3,
-        img: '',
+        img: WireFraming,
         name: 'Wireframing and Prototyping',
         description:'Wireframing and prototyping validate designs to meet user and business goals.'  
     },
     {
         id: 4,
-        img: '',
+        img: Visual,
         name: 'Visual Design',
         description:'Visual design enhances appeal, readability, engagement, identity, and usability '  
     },
     {
         id: 5,
-        img: '',
+        img: DesignSystem,
         name: 'Design System Development',
         description:'Component libraries offer reusable UI components and design pattern guidance with documentation'  
     },

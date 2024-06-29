@@ -2,6 +2,7 @@
     padding: 20px;
     text-align: center;
     background-color: #f8f9fa;
+    border-bottom: 2px solid #E1E1E1;
   }
   
   .header-flex {
@@ -30,10 +31,9 @@
   }
   
   h3 {
-    width: 80%;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Red Rose', sans-serif;
     color: #6F6C90;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
   }
   
@@ -50,6 +50,16 @@
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .available-button{
+    width: auto;
+    background-color: white;
+    color: black;
+    border:1px solid #E1E1E1;
     cursor: pointer;
     display: inline-flex;
     align-items: center;

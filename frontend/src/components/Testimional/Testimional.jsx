@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import './Testimional.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Testimonials from "../../assets/Testimional_logo.png"
 
-// YouTube Embed Component
 const YouTubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
     <iframe
@@ -21,7 +21,7 @@ const YouTubeEmbed = ({ embedId }) => (
 
 const testimonials = [
   {
-    videoId: 'dQw4w9WgXcQ', // Replace with actual YouTube video IDs
+    videoId: 'dQw4w9WgXcQ', 
     logo: 'webflow',
     name: 'Mike Warren',
     title: 'Product Developer at Webflow',
@@ -57,7 +57,11 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="testimonial-slider">
+    <div className="testimonial-slider bg-[]#FAFAFA">
+      <div className="flex flex-col items-center justify-center">
+      {<img src={Testimonials} alt="Services" className="mb-2 mt-5"/>}
+      <h3 className="text-[42px] font-semibold text-black">Testimonials</h3>
+    </div>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
           <div key={index} className="testimonial-slide">

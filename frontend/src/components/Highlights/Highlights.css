@@ -175,7 +175,7 @@
   }
   
   .highlights li:first-child:hover::before {
-    transform: translateX(0) translateY(0); /* Move to cover the element */
+    transform: translateX(0) translateY(0); 
   }
   
   .highlights li:first-child:hover {
@@ -185,7 +185,7 @@
 
 .highlights button{
    display: block;
-   margin: auto;
+   margin-top: -80px;
 }
 
 .highlights .highlights-container {
