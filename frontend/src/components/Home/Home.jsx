@@ -9,6 +9,7 @@ import Testimional from '../Testimional/Testimional'
 import Blog from '../Blog/Blog'
 import Question from '../Question/Question'
 import Contact from '../Contact/Contact'
+import Services from '../Services/Services'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Header />
       <Highlights />
       <Task />
+      <Services/>
       <Digital />
       <About />
       <Testimional />
