@@ -26,3 +26,22 @@
   font-size: 20px;
   margin-top: 10px;
 }
+.absolute {
+  position: absolute;
+  top: 20%; /* Adjust to center the image */
+  left: 45%; /* Adjust to center the image */
+  transform: translate(-50%, -50%);
+}
+.relative {
+  position: relative;
+}
+.border-right {
+  border-right: 2px solid #E5E6EC;
+}
+
+@media (max-width: 768px) {
+  .border-right {
+    border-right: none;
+    border-bottom: 1px solid #E5E6EC;
+  }
+}

@@ -5,7 +5,7 @@ import Highlights from '../Highlights/Highlights'
 import Task from '../Task/Task'
 import Digital from '../Digital/Digital'
 import About from '../About/About'
-import Testimional from '../Testimional/Testimional'
+import TestimonialSlider from '../Testimional/Testimonial'
 import Blog from '../Blog/Blog'
 import Question from '../Question/Question'
 import Contact from '../Contact/Contact'
@@ -20,7 +20,7 @@ const Home = () => {
       <Services/>
       <Digital />
       <About />
-      <Testimional />
+      <TestimonialSlider />
       <Blog />
       <Question/>
       <Contact/>

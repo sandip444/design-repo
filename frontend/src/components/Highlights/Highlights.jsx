@@ -29,7 +29,7 @@ const Highlights = () => {
       {["All", "Website", "Mobile", "Web App", "Wireframes"].map((category) => (
         <li
           key={category}
-          onClick={() => handleFilterClick(category)}
+          onClick={() => handleFilterChange(category)}
           className={`filter-button cursor-pointer px-3 md:px-4 py-2 rounded-full text-xs md:text-sm lg:text-base my-2 ${filter === category ? "active" : ""}`}
         >
           {category}

@@ -103,7 +103,7 @@ const Navbar = () => {
 
       {isDrawerOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 z-50">
-          <div className="fixed inset-y-0 left-0 w-64 bg-white shadow-lg p-4 z-50">
+          <div className="fixed inset-y-0 left-0 w-64 bg-white shadow-lg p-2 z-50">
             <div className="flex justify-between items-center mb-4">
               <div className="logo flex-shrink-0 mt-3">
                 <img src={assets.logo} alt="Logo" className="h-10 md:h-12" />
@@ -117,6 +117,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex flex-col space-y-4">
+              <p className="">All Categories</p>
               <ul className="flex flex-row space-x-4">
                 <li
                   onMouseEnter={() => handleMouseEnter("Globe")}
