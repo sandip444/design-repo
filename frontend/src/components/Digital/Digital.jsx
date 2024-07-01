@@ -5,9 +5,10 @@ import { digital_list } from '../../assets/assets';
 const Digital = () => {
   return (
     <div className="digital bg-[#FAFAFA]">
-      <h1 className="text-3xl md:text-5xl text-center mt-8 mb-6">
-        Empower your digital transformation with innovative solutions and expert guidance.
-      </h1>
+      <h1 className='text-2xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight md:leading-[50px]'>
+  Empower your digital transformation with innovative solutions and expert guidance.
+</h1>
+
 
       <div className="digital-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-2">
         {digital_list.map((item, index) => (
