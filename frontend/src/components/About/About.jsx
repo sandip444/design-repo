@@ -1,6 +1,9 @@
 import React from "react";
 import "./About.css";
 import { assets } from "../../assets/assets";
+import Upwork  from "../../icons/upwork.png"
+import Dribble from "../../icons/dribble.png"
+import Linkedin from "../../icons/linkedIn.png"
 import { BiSolidTimer } from "react-icons/bi";
 import { MdComputer } from "react-icons/md";
 
@@ -31,9 +34,9 @@ const About = () => {
           </div>
 
           <div className="about-link">
-            <a href="">Linkedin</a>
-            <a href="">Dribble</a>
-            <a href="">Upwork</a>
+          <img src={Linkedin} alt="img" />
+            <img src={Dribble} alt="img" />
+            <img src={Upwork} alt="img" />
           </div>
         </div>
 

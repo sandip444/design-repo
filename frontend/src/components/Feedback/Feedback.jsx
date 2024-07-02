@@ -1,6 +1,13 @@
 import React from 'react'
 import './Feedback.css'
 import {assets} from '../../assets/assets.js';
+import Linkedinimg from "../../icons/linkedinicon.png";
+import upimg from "../../icons/up.png";
+import instaimg from "../../icons/instagram-icon.png"
+import twitterimg from "../../icons/twitter-icon.png"
+import beimg from "../../icons/Be.png";
+import jvimg from "../../icons/Jv.png"
+import ballimg from "../../icons/pinkball.png"
 // import LinkedInIcon from 'path/to/linkedin-icon.png';
 // import BehanceIcon from 'path/to/behance-icon.png';
 // import UpworkIcon from 'path/to/upwork-icon.png';
@@ -15,26 +22,26 @@ const Feedback = () => {
     <h2>Fill out the form below to get in touch with us.</h2>
     <div className="icons-container">
       <div className="icon-wrapper">
-        <img src={assets.Globe_icon_black} alt="Dribbble" className="icon" />
+        <img src={Linkedinimg} alt="Dribbble" className="icon" />
       </div>
       <div className="icon-wrapper">
-        <img src={assets.Behance_icon_black} alt="LinkedIn" className="icon" />
+        <img src={upimg} alt="LinkedIn" className="icon" />
       </div>
       <div className="icon-wrapper">
-        <img src={assets.Behance_icon_color} alt="Behance" className="icon" />
+        <img src={instaimg} alt="Behance" className="icon" />
       </div>
       {/* <img src={assets.Ellipse} alt="" style={{"z-index": -0.1}}/> */}
       <div className="icon-wrapper">
-        <img src={assets.logo} alt="JV" className="central-icon" />
+        <img src={jvimg} alt="JV" className="central-icon" />
       </div>
       <div className="icon-wrapper">
-        <img src={assets.Email_icon_color} alt="Upwork" className="icon" />
+        <img src={beimg} alt="Upwork" className="icon" />
       </div>
       <div className="icon-wrapper">
-        <img src={assets.Instagram_icon_color} alt="Twitter" className="icon" />
+        <img src={twitterimg} alt="Twitter" className="icon" />
       </div>
       <div className="icon-wrapper">
-        <img src={assets.Instagram_icon_black} alt="Instagram" className="icon" />
+        <img src={ballimg} alt="Instagram" className="icon" />
       </div>
     </div>
   </section>
