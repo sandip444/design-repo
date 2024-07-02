@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Highlights.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { portfolio_list } from "../../assets/assets";
@@ -6,6 +6,41 @@ import Hireme from "../../assets/Hire_Me.png"
 
 const Highlights = () => {
   const [filter, setFilter] = useState("All");
+  const [portfolio,setPortfolio] = useState(portfolio_list)
+  useEffect(() => {
+    const updatedData = portfolio_list.map(item => {
+      let category = '';
+      switch (item.id) {
+        case 1:
+          category = 'Mobile';
+          break;
+        case 2:
+          category = 'Website';
+          break;
+          case 3:
+            category = 'Mobile';
+            break;
+            case 4:
+              category = 'Wireframes';
+              break;
+              case 5:
+                category = 'Web App';
+                break;
+                case 6:
+                  category = 'Mobile';
+                  break;
+        default:                            
+          category = 'other';
+      }
+      return {
+        ...item,
+        category
+      };
+    });
+    setPortfolio(updatedData);
+  }, []);
+  console.log(portfolio)
+
 
   const handleFilterChange = (category) => {
     setFilter(category);
@@ -14,8 +49,8 @@ const Highlights = () => {
   const filteredList =
     filter === "All"
       ? portfolio_list
-      : portfolio_list.filter((item) => item.category === filter);
-
+      : portfolio.filter((item) => item.category === filter);
+// console.log(portfolio_list)
   return (
     <>
       <div className="flex flex-col items-center justify-center">
