@@ -20,6 +20,8 @@ footer {
 
 .footer-left {
     text-align: left;
+    color: 
+    #D0D5DD;
 }
 
 .footer-right {
@@ -36,6 +38,17 @@ footer {
     list-style: none;
     margin: 20px 0;
     font-size: 18px;
+   
+}
+
+.footer-left ul li a{
+    color:#EAECF0;
+    
+}
+.email img{
+    position: relative;
+    top: 15px;
+    right:15px;
 }
 
 footer a {
@@ -58,7 +71,7 @@ footer hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 32px;
 }
 
 .footer-bottom .footer-left {

@@ -3,6 +3,8 @@ import './Footer.css';
 import footerLogo from "../../icons/footer logo.png"
 import footerIcons from "../../icons/footer right icons.png"
 import FooterBottomicons from "../../icons/footer bottom icons.png"
+// import emailIcon from "../../icons/sms.jpg";
+import emailIcon from "../../icons/Vector.png";
 const Footer = () => {
   return (
     <footer>
@@ -21,6 +23,7 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <div className="email">
+            <img  src={emailIcon}></img>
             <a href="mailto:jayvaghasiya5232@gmail.com">jayvaghasiya5232@gmail.com</a>
           </div>
           <div className="brand">
@@ -35,7 +38,7 @@ const Footer = () => {
       <hr />
       <div className="footer-bottom">
         <div className="footer-left">
-          <p>&copy; 2024 Jay Vagasiya. All Rights Reserved.</p>
+          <p>&copy; 2024 Jay Vagasiya All Rights Reserved.</p>
         </div>
         <div className="footer-right">
           <p><img src={FooterBottomicons} alt="socialmediaicons"></img></p>

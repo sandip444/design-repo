@@ -10,6 +10,7 @@ import ReviewBottom from "../../assets/reviewIconBottom.png";
 import Reviews from "../../assets/reviews.png";
 import UpperComma from "../../assets/upperComma.png";
 import LowerComma from "../../assets/lowerComma.png";
+import loadicon from "../../icons/testimonial card right bottom.png"
 
 const YouTubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
@@ -107,7 +108,7 @@ const TestimonialSlider = () => {
         <ul className="custom-dots">{dots}</ul>
       </div>
     ),
-    customPaging: (i) => <div className="custom-dot">{i + 1}</div>,
+    customPaging: (i) => <div className="custom-dot"><img src={loadicon}></img></div>,
   };
 
   return (
