@@ -10,7 +10,8 @@ import ReviewBottom from "../../assets/reviewIconBottom.png";
 import Reviews from "../../assets/reviews.png";
 import UpperComma from "../../assets/upperComma.png";
 import LowerComma from "../../assets/lowerComma.png";
-import loadicon from "../../icons/testimonial card right bottom.png"
+import loadicon from "../../icons/testimonial card right bottom.png";
+import humanicon from "../../icons/testimonial description icon.png";
 
 const YouTubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
@@ -150,7 +151,7 @@ const TestimonialSlider = () => {
             {/* Text Content Container */}
             <div className="testimonial-content w-full md:w-2/5 p-4">
               <img
-                src={`/path/to/${testimonial.logo}.png`}
+                src={humanicon}
                 alt={testimonial.logo}
                 className="company-logo w-12 h-12 mb-4"
               />
