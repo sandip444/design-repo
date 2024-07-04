@@ -19,6 +19,9 @@ import UXStrategy from "../assets/uxStrategy.png";
 import WireFraming from "../assets/wireframing.png";
 import Visual from "../assets/visual.png";
 import DesignSystem from "../assets/designSystem.png";
+import BlogImg1 from "../../src/icons/blogimg1.png";
+import BlogImg2 from "../../src/icons/blogimage2.png";
+import BlogImg3 from "../../src/icons/blogimg3.png";
 
 
 import upwork from './upwork.png'
@@ -159,7 +162,7 @@ export const question_list = [
 export const blog_list = [
     {
         id: 1,
-        img: '',
+        img: BlogImg1,
         students: 'Students',
         preceptor: 'Preceptor',
         time: '3 min',
@@ -168,7 +171,7 @@ export const blog_list = [
     },
     {
         id: 2,
-        img: '',
+        img: BlogImg2,
         students: 'Students',
         preceptor: 'Preceptor',
         time: '3 min',
@@ -177,7 +180,7 @@ export const blog_list = [
     },
     {
         id: 3,
-        img: '',
+        img: BlogImg3,
         students: 'Students',
         preceptor: 'Preceptor',
         time: '3 min',

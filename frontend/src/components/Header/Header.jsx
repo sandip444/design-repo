@@ -18,7 +18,7 @@ const Header = () => {
             
             <div className="flex items-center justify-center mb-8 md:mb-0">
               <div className="header-content text-center">
-              <img src={HeaderRating} alt="" className="w-12 h-12 mx-auto object-contain md:w-24 md:h-20 lg:w-32 lg:h-28" />
+              <img src={HeaderRating} alt="" className="w-12 h-12 widthInc mx-auto object-contain md:w-24 md:h-20 lg:w-32 lg:h-28 " />
 
                 <h1 className='text-3xl md:text-5xl font-bold mb-4 md:mb-6'>Get a Dedicated Full-Time Autonomous Product Designer</h1>
                 <h3 className='text-lg md:text-2xl text-[#6F6C90] text-center mx-auto mb-4 md:mb-6 px-5'>Create intuitive and visually compelling interfaces that enhance user experience and engagement. Your designs will shape how users interact with our products, making every click seamless and enjoyable.</h3>

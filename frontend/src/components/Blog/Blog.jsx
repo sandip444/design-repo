@@ -3,9 +3,10 @@ import "./Blog.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { blog_list } from '../../assets/assets';
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState(blog_list);
 
   useEffect(() => {
     axios.get("http://localhost:4000/blogs").then((res) => {
@@ -14,6 +15,7 @@ const Blog = () => {
       setBlogs(recentBlogs);
     });
   }, []);
+  console.log(blogs)
 
   return (
     <div className="blog py-8 px-4">

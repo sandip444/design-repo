@@ -53,7 +53,7 @@ const Highlights = () => {
 // console.log(portfolio_list)
   return (
     <>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center heading">
         <img src={Hireme} alt="Services" className="mb-2 mt-5" />
         <h1 className="text-[42px] font-semibold text-black">
         Portfolio Highlights

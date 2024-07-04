@@ -93,6 +93,9 @@
     button {
       font-size: 1rem;
     }
+    .heading{
+      text-align: center;
+    }
   }
   
   @media (max-width: 480px) {
@@ -107,6 +110,9 @@
     button {
       font-size: 0.9rem;
       padding: 8px 16px;
+    }
+    .heading{
+      text-align: center;
     }
   }
   

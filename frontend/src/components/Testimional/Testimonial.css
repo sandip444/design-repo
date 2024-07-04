@@ -207,3 +207,13 @@
     height: 32px;
     width: 127px;
   }
+  @media (max-width: 480px){
+    .widthInc{
+      width: 6rem !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .widthInc{
+      width: 6rem !important;
+    }
+  }

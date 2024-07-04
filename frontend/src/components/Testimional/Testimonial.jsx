@@ -213,7 +213,7 @@ const TestimonialSlider = () => {
                   <img
                     src={testimonial.logo}
                     alt={testimonial.logo}
-                    className="w-12 h-12 rounded-full mr-4"
+                    className=" h-12 rounded-full mr-4"
                   />
                   <div>
                     <h3 className="font-bold text-lg">{testimonial.name}</h3>
@@ -233,7 +233,7 @@ const TestimonialSlider = () => {
                 <img
                   src={testimonial.bottomLogo}
                   alt=""
-                  className="ml-auto w-12 sm:w-16 md:w-20 lg:w-24"
+                  className="ml-auto  sm:w-16 md:w-20 lg:w-24"
                 />
               </div>
             </div>
