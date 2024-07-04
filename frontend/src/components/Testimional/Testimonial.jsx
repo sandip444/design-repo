@@ -147,41 +147,41 @@ const TestimonialSlider = () => {
           <div
             key={index}
             className="testimonial-slide flex flex-col md:flex-row items-center justify-center"
-          
+
           >
-            <div style={{display:"flex"}}>
-            {/* Video Container */}
-            <div className="video-container w-full md:w-3/5">
-              <YouTubeEmbed embedId={testimonial.videoId} />
-            </div>
+            <div style={{ display: "flex" }} className="FlexCol">
+              {/* Video Container */}
+              <div className="video-container w-full md:w-3/5">
+                <YouTubeEmbed embedId={testimonial.videoId} />
+              </div>
 
-            {/* Text Content Container */}
-            <div className="testimonial-content w-full md:w-2/5 p-4">
-             <div className="text-title">
-             <img src={testimonialTextTitle}/>
-             </div>
-            <div className="text-head">
-            <div>
-             <img
-                src={humanicon}
-                alt=""
-                className="company-logo w-12 h-12 mb-4"
-              />
-             </div>
-             <div>
-             <h3 style={{color:"#170F49"}}className="text-lg font-bold">{testimonial.name}</h3>
-              <p style={{color:"#6F6C90"}} className="title text-md">{testimonial.title}</p>
-             </div>
-            </div>
+              {/* Text Content Container */}
+              <div className="testimonial-content w-full md:w-2/5 p-4">
+                <div className="text-title">
+                  <img src={testimonialTextTitle} />
+                </div>
+                <div className="text-head">
+                  <div>
+                    <img
+                      src={humanicon}
+                      alt=""
+                      className="company-logo w-12 h-12 mb-4"
+                    />
+                  </div>
+                  <div>
+                    <p style={{ color: "#170F49" }} className="text-lg font-bold">{testimonial.name}</p>
+                    <p style={{ color: "#6F6C90" }} className=" text-md">{testimonial.title}</p>
+                  </div>
+                </div>
 
-              <p style={{color:"#6F6C90"}} className="text text-sm md:text-base">{testimonial.text}</p>
-              <div className="rating text-yellow-500 mt-2">
-                {"★".repeat(Math.floor(testimonial.rating))}
-                {"☆".repeat(5 - Math.floor(testimonial.rating))}
-                <span className="text-gray-700 ml-2">{testimonial.rating}</span>
+                <p style={{ color: "#6F6C90" }} className="text text-sm md:text-base">{testimonial.text}</p>
+                <div className="rating text-yellow-500 mt-2">
+                  {"★".repeat(Math.floor(testimonial.rating))}
+                  {"☆".repeat(5 - Math.floor(testimonial.rating))}
+                  <span className="text-gray-700 ml-2">{testimonial.rating}</span>
+                </div>
               </div>
             </div>
-          </div>
           </div>
         ))}
       </Slider>
@@ -192,7 +192,7 @@ const TestimonialSlider = () => {
           alt="Services"
           className="testimonial-logo mb-2 mt-5 w-28 max-w-xs md:max-w-sm lg:max-w-md object-contain"
         />
-        <h3 className="testimonial-heading text-md md:text-4xl lg:text-5xl font-semibold text-black text-left">
+        <h3 className="testimonial-heading text-md md:text-4xl lg:text-5xl font-semibold text-black text-left" style={{ fontSize: "32px" }}>
           Positive Feedback from Past Clients
         </h3>
       </div>

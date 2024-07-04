@@ -3,8 +3,7 @@ import './Footer.css';
 import footerLogo from "../../icons/footer logo.png"
 import footerIcons from "../../icons/footer right icons.png"
 import FooterBottomicons from "../../icons/footer bottom icons.png"
-// import emailIcon from "../../icons/sms.jpg";
-import emailIcon from "../../icons/Vector.png";
+import emailIcon from "../../icons/sms.svg";
 const Footer = () => {
   return (
     <footer>
@@ -23,7 +22,7 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <div className="email">
-            <img  src={emailIcon}></img>
+            <img src={emailIcon} style={{ stroke: "#FFF", }}></img>
             <a href="mailto:jayvaghasiya5232@gmail.com">jayvaghasiya5232@gmail.com</a>
           </div>
           <div className="brand">

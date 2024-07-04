@@ -9,9 +9,9 @@ const Task = () => {
       {task_list.map((item, index) => (
         <div
           key={index}
-          className={`flex-1 flex flex-col items-center justify-center w-full md:w-1/2 lg:w-1/4 px-4 relative ${
-            index !== task_list.length - 1 ? 'border-right' : ''
-          }`}
+          className={`spacing flex-1 flex flex-col items-center justify-center w-full md:w-1/2 lg:w-1/4 px-4 relative flexWrap ${index !== task_list.length - 1 ? 'border-right' : ''
+
+            }`}
         >
           <div className="relative flex items-center justify-center w-full">
             <img src={CircleNumber} alt="" className="circle-bg absolute" />

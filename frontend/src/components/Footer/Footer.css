@@ -47,8 +47,8 @@ footer {
 }
 .email img{
     position: relative;
-    top: 15px;
-    right:15px;
+    top: 24px;
+    right:24px;
 }
 
 footer a {
@@ -95,5 +95,10 @@ footer hr {
         margin: 20px 0;
         font-size: 18px;
     }  
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
     

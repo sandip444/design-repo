@@ -37,20 +37,32 @@
 /* Right side content (form) */
 .contact-right {
     flex: 2; /* Take up more space than the left side */
-    min-width: 300px; /* Minimum width */
-    max-width: 600px; /* Maximum width */
+    /* min-width: 300px; Minimum width */
+    /* max-width: 600px; Maximum width */
+    width: 629px;
+    height: 509px;
+    border-radius: 24px;
+    border: 1px solid #DBDCE2;
+    padding: 32px;
+    box-shadow: 0px 5px 14px 0px rgba(8, 15, 52, 0.04) !important;
 }
 
 /* Styling for the form itself */
 form {
+    width: 565px;
+    height: 445px;
     background-color: white; /* White background */
-    padding: 50px 40px; /* Padding inside the form */
-    border-radius: 30px; /* Rounded corners */
+    padding: 32px; /* Padding inside the form */
+    border-radius: 24px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    min-height: 70vh; /* Minimum height of 70% viewport height */
+    /* min-height: 70vh; Minimum height of 70% viewport height */
     display: flex; /* Flex container for vertical centering */
     flex-direction: column; /* Stack form elements vertically */
     justify-content: center; /* Center elements vertically */
+    gap: 32px;
+    /* border: 1px solid #DBDCE2; */
+    
+
 }
 
 /* Flex container for form fields */
@@ -92,7 +104,7 @@ input:focus, textarea:focus {
 /* Styling for labels */
 label {
     position: absolute; /* Absolute positioning for label */
-    top: 5px; /* Distance from input field */
+    top: 1px; /* Distance from input field */
     left: 5px; /* Distance from input field */
     color: #999; /* Light gray color */
     pointer-events: none; /* Disable pointer events */
@@ -120,10 +132,15 @@ textarea {
 }
 
 form button {
-    display: flex; /* Flex container for alignment */
-    justify-content: center;
-    align-items: center; /* Center align content vertically */
-    margin-top: 10px; /* Space above the button */
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding: 4px 4px 4px 16px;
+    background-color: #111522;
 }
 
 /* Media query for smaller screens */

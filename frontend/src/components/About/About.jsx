@@ -1,16 +1,19 @@
 import React from "react";
 import "./About.css";
 import { assets } from "../../assets/assets";
-import Upwork  from "../../icons/upwork.png"
+import Upwork from "../../icons/upwork.png"
 import Dribble from "../../icons/dribble.png"
 import Linkedin from "../../icons/linkedIn.png"
 import { BiSolidTimer } from "react-icons/bi";
 import { MdComputer } from "react-icons/md";
+import YouChoiceIsBest from '../../assets/YourChoiceBest.png';
+import CurvedLine from '../../assets/Line56.png'
 
 const About = () => {
   return (
     <div className="about">
-      <h1>About Me</h1>
+      <div><img className="YourChoice" src={YouChoiceIsBest} /></div>
+      <div className="headAbout">About Me <span><img className="curvedClass" src={CurvedLine} /></span></div>
       <div className="about-container">
         <div className="about-left">
           <h2 className="text-3xl">Jay Vaghasiya - UI-UX Designer</h2>
@@ -34,9 +37,9 @@ const About = () => {
           </div>
 
           <div className="about-link">
-          <img src={Linkedin} alt="img" />
-            <img src={Dribble} alt="img" />
-            <img src={Upwork} alt="img" />
+            <img src={Linkedin} className="about-image " alt="img" />
+            <img src={Dribble} className="about-image " alt="img" />
+            <img src={Upwork} className="about-image " alt="img" />
           </div>
         </div>
 

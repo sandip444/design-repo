@@ -44,7 +44,7 @@ const Contact = () => {
         <div className="contact-left">
           <FeedbackForm />
         </div>
-        <div className="contact-right">
+        <div style={{width:"629px"}} className="contact-right">
           <form onSubmit={handleSubmit}>
             <div className="multi-fields">
               <div className="form-group">
