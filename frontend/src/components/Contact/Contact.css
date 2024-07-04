@@ -92,12 +92,12 @@ input:focus, textarea:focus {
 /* Styling for labels */
 label {
     position: absolute; /* Absolute positioning for label */
-    /* top: 10px; Distance from input field */
-    left: 10px; /* Distance from input field */
+    top: 5px; /* Distance from input field */
+    left: 5px; /* Distance from input field */
     color: #999; /* Light gray color */
     pointer-events: none; /* Disable pointer events */
     transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease; /* Smooth transitions */
-    /* background-color: white; White background for visibility */
+    background-color: white; /* White background for visibility */
     padding: 0 5px; /* Padding around text */
 }
 

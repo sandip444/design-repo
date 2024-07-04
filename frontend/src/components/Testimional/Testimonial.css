@@ -164,7 +164,21 @@
     width: 20px;
     height: 20px;
   }
+
+  .LowerinvertedComma{
+    height: 26px;
+    width: 26px;
+    /* opacity: 7%; */
+    position: absolute;
+    right: -25px;
+    top: -5px;
+  }
   
+  .UpperinvertedComma{
+    position: relative;
+    top: 20px;
+    left: -30px;
+  }
   .indicator-image {
     width: 100%;
     height: 100%;
@@ -185,3 +199,11 @@
     display: none; 
   }
   
+  .text-head{
+    display: flex;
+    gap: 16px;
+  }
+  .text-title{
+    height: 32px;
+    width: 127px;
+  }

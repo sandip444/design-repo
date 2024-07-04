@@ -12,6 +12,7 @@ import UpperComma from "../../assets/upperComma.png";
 import LowerComma from "../../assets/lowerComma.png";
 import loadicon from "../../icons/testimonial card right bottom.png";
 import humanicon from "../../icons/testimonial description icon.png";
+import testimonialTextTitle from "../../icons/testimonial text title.png";
 
 const YouTubeEmbed = ({ embedId }) => (
   <div className="video-responsive">
@@ -101,6 +102,8 @@ const TestimonialSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
+    // autoplay: true,
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
@@ -109,7 +112,7 @@ const TestimonialSlider = () => {
         <ul className="custom-dots">{dots}</ul>
       </div>
     ),
-    customPaging: (i) => <div className="custom-dot"><img src={loadicon}></img></div>,
+    // customPaging: (i) => <div className="custom-dot"><img src={""}></img></div>
   };
 
   return (
@@ -124,15 +127,17 @@ const TestimonialSlider = () => {
           <img
             src={UpperComma}
             alt=""
-            className="absolute -top-0 -left-5 w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-10"
+            className="UpperinvertedComma"
           />
+          {/* absolute -top-0 -left-5 w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-10 */}
           <h3 className="testimonial-heading text-2xl md:text-4xl lg:text-5xl font-semibold text-black text-center inline-block relative">
             Testimonials
             <img
               src={LowerComma}
               alt=""
-              className="absolute -top-14 -right-0.5 transform translate-x-full translate-y-full w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-10"
+              className="LowerinvertedComma"
             />
+            {/* absolute -top-14 -right-0.5 transform translate-x-full translate-y-full w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-10 */}
           </h3>
         </div>
       </div>
@@ -142,7 +147,9 @@ const TestimonialSlider = () => {
           <div
             key={index}
             className="testimonial-slide flex flex-col md:flex-row items-center justify-center"
+          
           >
+            <div style={{display:"flex"}}>
             {/* Video Container */}
             <div className="video-container w-full md:w-3/5">
               <YouTubeEmbed embedId={testimonial.videoId} />
@@ -150,20 +157,31 @@ const TestimonialSlider = () => {
 
             {/* Text Content Container */}
             <div className="testimonial-content w-full md:w-2/5 p-4">
-              <img
+             <div className="text-title">
+             <img src={testimonialTextTitle}/>
+             </div>
+            <div className="text-head">
+            <div>
+             <img
                 src={humanicon}
-                alt={testimonial.logo}
+                alt=""
                 className="company-logo w-12 h-12 mb-4"
               />
-              <h3 className="text-lg font-bold">{testimonial.name}</h3>
-              <p className="title text-md">{testimonial.title}</p>
-              <p className="text text-sm md:text-base">{testimonial.text}</p>
+             </div>
+             <div>
+             <h3 style={{color:"#170F49"}}className="text-lg font-bold">{testimonial.name}</h3>
+              <p style={{color:"#6F6C90"}} className="title text-md">{testimonial.title}</p>
+             </div>
+            </div>
+
+              <p style={{color:"#6F6C90"}} className="text text-sm md:text-base">{testimonial.text}</p>
               <div className="rating text-yellow-500 mt-2">
                 {"★".repeat(Math.floor(testimonial.rating))}
                 {"☆".repeat(5 - Math.floor(testimonial.rating))}
                 <span className="text-gray-700 ml-2">{testimonial.rating}</span>
               </div>
             </div>
+          </div>
           </div>
         ))}
       </Slider>

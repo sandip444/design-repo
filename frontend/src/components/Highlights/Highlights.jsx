@@ -86,13 +86,23 @@ const Highlights = () => {
               </div>
             </div>
           ))}
-          <div className="relative mt-[-30px]">
-            <button className="view-all-button bg-black text-white py-2 px-4 rounded-full relative z-10 mx-auto block md:inline-block">
+
+         
+        </div>
+        <div
+          //  className="relative mt-[-30px]"
+          style={{display:"flex", justifyContent:"center",marginTop:"25px"}}
+           >
+            <button 
+            // className="view-all-button bg-black text-white py-2 px-4 rounded-full relative z-10 mx-auto block md:inline-block"
+            >
               View all Portfolio
             </button>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-16 w-52 bg-gray-300 rounded-full opacity-50 z-0 mt-[-70px] py-[32px] px-6"></div>
+            <div 
+            // className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-16 w-52 bg-gray-300 rounded-full opacity-50 z-0 mt-[-70px] py-[32px] px-6"
+            ></div>
           </div>
-        </div>
+
       </div>
     </>
   );
