@@ -44,7 +44,7 @@ const Contact = () => {
         <div className="contact-left">
           <FeedbackForm />
         </div>
-        <div style={{width:"629px"}} className="contact-right">
+        <div  className="contact-right">
           <form onSubmit={handleSubmit}>
             <div className="multi-fields">
               <div className="form-group">
@@ -110,7 +110,7 @@ const Contact = () => {
               <label htmlFor="description">Description</label>
             </div>
             <div className="button-container">
-              <button type="submit">
+              <button type="submit" style={{padding:"4px 4px 4px 16px",backgroundColor:"#111522",fontSize:"16px",lineHeight:"20px",fontWeight:"700px"}}>
                 Submit{" "}
                 <span>
                   <MdArrowForwardIos />

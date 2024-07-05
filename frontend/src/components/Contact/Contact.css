@@ -4,7 +4,7 @@
     min-height: 100vh; /* Full viewport height */
     padding: 40px 20px; /* Space around content */
     box-sizing: border-box; /* Include padding in width calculation */
-    background-color: #f8f8f8; /* Light background color */
+    /* Light background color */
     display: flex; /* Flex container for vertical centering */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -39,12 +39,13 @@
     flex: 2; /* Take up more space than the left side */
     /* min-width: 300px; Minimum width */
     /* max-width: 600px; Maximum width */
-    width: 629px;
-    height: 509px;
+    /* width: 629px;
+    height: 509px; */
     border-radius: 24px;
-    border: 1px solid #DBDCE2;
+    margin-left: 6%;
+    /* border: 1px solid #DBDCE2; */
     padding: 32px;
-    box-shadow: 0px 5px 14px 0px rgba(8, 15, 52, 0.04) !important;
+    /* box-shadow: 0px 5px 14px 0px rgba(8, 15, 52, 0.04) !important; */
 }
 
 /* Styling for the form itself */
@@ -88,7 +89,7 @@ input, textarea {
     padding: 15px; /* Padding inside the field */
     font-size: 20px;
     border: 1px solid #c5c5c5; /* Light border */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
     outline: none; /* Remove default outline */
     background: transparent; /* Transparent background */
     transition: border-color 0.3s ease; /* Smooth transition for border color */

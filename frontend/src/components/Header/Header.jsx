@@ -24,8 +24,8 @@ const Header = () => {
                 <h3 className='text-lg md:text-2xl text-[#6F6C90] text-center mx-auto mb-4 md:mb-6 px-5'>Create intuitive and visually compelling interfaces that enhance user experience and engagement. Your designs will shape how users interact with our products, making every click seamless and enjoyable.</h3>
                 <img src={HeaderLeft} alt="header" className="md:float-left mr-8 mb-8 md:mb-0 hidden sm:block hiddenIMages" />
                 <img src={HeaderRight} alt="image" className="md:float-right ml-8 mb-8 md:mb-0 hidden sm:block hiddenIMages" />
-                <div className="button-container flex justify-center md:justify-center">
-                  <button className='text-white font-bold pr-[5px] pl-4 py-2 rounded-full flex items-center'>
+                <div className="button-container flex justify-center md:justify-center" style={{marginTop:"9%"}}>
+                  <button className='text-white font-bold pr-[5px] pl-4 py-2 rounded-full flex items-center' style={{padding:"4px 4px 4px 16px",backgroundColor:"#111522"}}>
                     Contact Us <span className="ml-2"><MdArrowForwardIos /></span>
                   </button>
                 </div>
@@ -38,7 +38,7 @@ const Header = () => {
 
       <div className="flex justify-center mt-[-30px] mb-4">
         <button className="font-bold py-2 px-5 rounded-full available-button text-uppercase">
-          Available For
+          AVAILABLE FOR
           <img src={Icon1} alt="" className="mx-2 h-6 w-6" />
           <img src={Icon2} alt="" className="mx-2 h-5 w-4" />
           <img src={Icon3} alt="" className="mx-2 h-5 w-5" />

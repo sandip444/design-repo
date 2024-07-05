@@ -35,13 +35,13 @@ const Feedback = () => {
         <img src={jvimg} alt="JV" className="central-icon" />
       </div>
       <div className="icon-wrapper">
-        <img src={beimg} alt="Upwork" className="icon" />
+        <img src={ballimg} alt="Upwork" className="icon" />
       </div>
       <div className="icon-wrapper">
-        <img src={twitterimg} alt="Twitter" className="icon" />
+        <img src={beimg} alt="Twitter" className="icon" />
       </div>
       <div className="icon-wrapper">
-        <img src={ballimg} alt="Instagram" className="icon" />
+        <img src={twitterimg} alt="Instagram" className="icon" />
       </div>
     </div>
   </section>

@@ -30,12 +30,13 @@
 
   /* Image container */
   .blog-imgHome {
-    width: auto;
-    height: 150px;
+    width: 420px;
+    height: 191px;
+    -o-object-fit: cover;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 26px;
     background: #eaeaea;
-  }
+ }
   
   .blog-img img {
     width: 375px;
@@ -103,5 +104,13 @@
     .blog-box {
       flex: 1 1 100%;
     }
+    .blog-imgHome {
+      width: 356px;
+      height: 191px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 26px;
+      background: #eaeaea;
+   }
   }
   

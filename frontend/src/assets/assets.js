@@ -15,10 +15,12 @@ import Dribble4 from './Dribbble4.png'
 import Dribble5 from './Dribbble5.png'
 import Dribble6 from './Dribbble6.png'
 import UserResearch from "../assets/userResearch.png";
-import UXStrategy from "../assets/uxStrategy.png";
+// import UXStrategy from "../assets/uxStrategy.png";
+import uxstrategy from "../../src/icons/UXStrategy.png";
+
 import WireFraming from "../assets/wireframing.png";
 import Visual from "../assets/visual.png";
-import DesignSystem from "../assets/designSystem.png";
+import DesignSystem from "../../src/icons/flowchartimg.png";
 import BlogImg1 from "../../src/icons/blogimg1.png";
 import BlogImg2 from "../../src/icons/blogimage2.png";
 import BlogImg3 from "../../src/icons/blogimg3.png";
@@ -90,7 +92,7 @@ export const digital_list=[
     },
     {
         id: 2,
-        img: UXStrategy,
+        img: uxstrategy,
         name: 'UX Strategy',
         description:'A comptehensive UX strategy involves research, analysis, architecture, and continuous testing'  
     },
@@ -123,7 +125,7 @@ export const task_list = [
     },
     {
         task_number: '120',
-        task_name: 'Project Launched',
+        task_name: '',
     },
     {
         task_number: '110',

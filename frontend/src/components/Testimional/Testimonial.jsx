@@ -156,7 +156,7 @@ const TestimonialSlider = () => {
               </div>
 
               {/* Text Content Container */}
-              <div className="testimonial-content w-full md:w-2/5 p-4">
+              <div className="FlexProp testimonial-content w-full md:w-2/5 p-4">
                 <div className="text-title">
                   <img src={testimonialTextTitle} />
                 </div>
@@ -168,8 +168,8 @@ const TestimonialSlider = () => {
                       className="company-logo w-12 h-12 mb-4"
                     />
                   </div>
-                  <div>
-                    <p style={{ color: "#170F49" }} className="text-lg font-bold">{testimonial.name}</p>
+                  <div style={{display:"flex",flexDirection:"column"}}>
+                    <p style={{ color: "#170F49" }} className="text-lg">{testimonial.name}</p>
                     <p style={{ color: "#6F6C90" }} className=" text-md">{testimonial.title}</p>
                   </div>
                 </div>
@@ -208,22 +208,25 @@ const TestimonialSlider = () => {
               className="absolute bottom-12 -right-8 w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-10"
             /> */}
             <div className="p-4 h-full flex flex-col justify-between">
-              <div>
+             
                 <div className="flex items-center">
+                  <div>
                   <img
                     src={testimonial.logo}
                     alt={testimonial.logo}
                     className=" h-12 rounded-full mr-4"
                   />
-                  <div>
-                    <h3 className="font-bold text-lg">{testimonial.name}</h3>
+                    </div>
+                  <div className="FlexAlign">
+                    <h3 className="text-lg" style={{fontWeight:"700",color:"#000"}}>{testimonial.name}</h3>
                     <p className="text-gray-600">{testimonial.title}</p>
                   </div>
                 </div>
-                <p className="text-gray-700 text-base mt-2 text-wrap">
+                
+             
+              <p className="text-gray-700 text-base mt-2 text-wrap">
                   {testimonial.text}
                 </p>
-              </div>
               <div className="flex items-center mt-4">
                 <div className="text-yellow-500">
                   {"★".repeat(Math.floor(testimonial.rating))}

@@ -17,11 +17,11 @@ const About = () => {
       <div className="about-container">
         <div className="about-left">
           <h2 className="text-3xl">Jay Vaghasiya - UI-UX Designer</h2>
-          <p className="text-lg font-red-rose">
+          <p className="text-lg font-red-rose" style={{fontWeight:"200",fontSize:"18px",lineHeight:"26px",color:"rgba(255, 255, 255, 0.7);"}}>
             Jay is an accomplished Senior UX Designer with more than 5+ years of
             experience in the fields of web, US, and UI design.
           </p>
-          <p className="text-lg font-red-rose">
+          <p className="text-lg font-red-rose" style={{fontWeight:"200",fontSize:"18px",lineHeight:"26px",color:"rgba(255, 255, 255, 0.4);"}}>
             My goal is to create digital experiences that delight users and
             drive business success.
           </p>

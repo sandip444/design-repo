@@ -2,6 +2,9 @@ import React,{useState} from 'react'
 import './Question.css';
 import { IoMdAdd } from "react-icons/io";
 import { question_list } from '../../assets/assets';
+import { MdArrowForwardIos } from 'react-icons/md';
+import LoadMoreIcon from "../../icons/loadmoreicon.svg";
+import moreicon from "../../icons/Vector.svg";
 
 
 const Question = () => {
@@ -13,7 +16,7 @@ const Question = () => {
     setIsReadMore(!isReadMore);
   }
   return (
-    <div className="question">
+    <div className="question" style={{backgroundColor:" #f8f8f8" }}>
       <h1>Frequently Asked Questions</h1>
       <div className="question-container">
         {question_list.map((item, index) => (
@@ -27,7 +30,18 @@ const Question = () => {
             </div>
           )
         ))}
-        <button onClick={handleButton}>Read More</button>
+        {/* <button >Read More</button> */}
+
+
+        <div className="PortfolioBtn" style={{ display: "flex", justifyContent: "center" }}>
+         <button onClick={handleButton} style={{padding:"4px 8px 4px 16px",backgroundColor:"#111522",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",display:"flex",gap:"6px"}}
+          // className="view-all-button bg-black text-white py-2 px-4 rounded-full relative z-10 mx-auto block md:inline-block"
+          >
+            Load More <img src={moreicon} style={{ stroke: "#FFF", }}></img>
+            {/* <span className="ml-2"></span> */}
+            </button>
+            {/* <circle cx="50" cy="150" r="40" fill="currentColor" stroke="currentColor" /> */}
+         </div>
       </div>
     </div>
   )

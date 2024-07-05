@@ -26,12 +26,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full bg-white shadow-md">
-      <nav className="flex items-center justify-between p-4 md:p-6">
+    <div className="w-full bg-white" style={{height:"97px",borderTop:"1px solid #E6E6E6",display:"flex",justifyContent:"space-between",width:"90%",margin:"0 auto"}}>
+      <nav className="flex items-center justify-between p-4 md:p-6" style={{display:"flex",alignItems:"center",marginTop:"7px"}}>
         <div className="logo flex-shrink-0">
-          <img src={assets.logo} alt="Logo" className="h-10 md:h-12" />
+          <img src={assets.logo} alt="Logo" className="h-10 md:h-12" style={{width:"41px",height:"38px"}}  />
         </div>
+    <div className="NavIcons">
 
+   
         <div className="md:hidden">
           {!isDrawerOpen && (
             <button
@@ -43,7 +45,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <ul className="hidden md:flex items-center space-x-4 md:space-x-8 text-sm md:text-base">
+        <ul className="hidden md:flex items-center space-x-4 md:space-x-8 text-sm md:text-base" style={{height: "50px",marginTop:"7px"}}>
           <p className="hidden sm:block">All Categories</p>
 
           <li
@@ -99,6 +101,7 @@ const Navbar = () => {
             </button>
           </li>
         </ul>
+        </div>
       </nav>
 
       {isDrawerOpen && (

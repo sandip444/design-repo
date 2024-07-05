@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Highlights.css";
+import { MdArrowForwardIos } from 'react-icons/md';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { portfolio_list } from "../../assets/assets";
 import Hireme from "../../assets/Hire_Me.png"
@@ -74,7 +75,7 @@ const Highlights = () => {
 
         <div className="highlights-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {filteredList.map((item, index) => (
-            <div className="highlights-box" key={index}>
+            <div className="highlights-box" style={{border:"none"}} key={index}>
               <div className="overflow-hidden rounded-lg">
                 <img src={item.img} alt={item.name} className="w-full" />
               </div>
@@ -89,15 +90,17 @@ const Highlights = () => {
 
 
         </div>
-        <div
+        <div className="PortfolioBtn" 
           //  className="relative mt-[-30px]"
-          style={{ display: "flex", justifyContent: "center", marginTop: "25px" }}
+          style={{ display: "flex", justifyContent: "center",left:"38%" }}
         >
-          <button
+         <div>
+         <button style={{padding:"4px 4px 4px 16px",backgroundColor:"#111522",fontSize:"16px",lineHeight:"20px",fontWeight:"700px"}}
           // className="view-all-button bg-black text-white py-2 px-4 rounded-full relative z-10 mx-auto block md:inline-block"
           >
             View all Portfolio
-          </button>
+            <span className="ml-2"><MdArrowForwardIos /></span></button>
+         </div>
           <div
           // className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-16 w-52 bg-gray-300 rounded-full opacity-50 z-0 mt-[-70px] py-[32px] px-6"
           ></div>
