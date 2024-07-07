@@ -37,7 +37,7 @@ const Header = () => {
       </div>
 
       <div className="flex justify-center mt-[-30px] mb-4">
-        <button className="font-bold py-2 px-5 rounded-full available-button text-uppercase">
+        <button style={{fontWeight:"400"}} className="font-bold py-2 px-5 rounded-full available-button text-uppercase">
           AVAILABLE FOR
           <img src={Icon1} alt="" className="mx-2 h-6 w-6" />
           <img src={Icon2} alt="" className="mx-2 h-5 w-4" />

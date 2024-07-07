@@ -8,6 +8,7 @@ import twitterimg from "../../icons/twitter-icon.png"
 import beimg from "../../icons/Be.png";
 import jvimg from "../../icons/Jv.png"
 import ballimg from "../../icons/pinkball.png"
+import formicon from "../../icons/Illustration.svg";
 // import LinkedInIcon from 'path/to/linkedin-icon.png';
 // import BehanceIcon from 'path/to/behance-icon.png';
 // import UpworkIcon from 'path/to/upwork-icon.png';
@@ -19,7 +20,9 @@ const Feedback = () => {
   return (
 
     <section className="contact-section">
-    <h2>Fill out the form below to get in touch with us.</h2>
+    <div className="TextContainer">
+    Fill out the form below to get in touch with us.
+    </div>
     <div className="icons-container">
       <div className="icon-wrapper">
         <img src={Linkedinimg} alt="Dribbble" className="icon" />
@@ -30,7 +33,7 @@ const Feedback = () => {
       <div className="icon-wrapper">
         <img src={instaimg} alt="Behance" className="icon" />
       </div>
-      {/* <img src={assets.Ellipse} alt="" style={{"z-index": -0.1}}/> */}
+       {/* <img src={assets.Ellipse} alt="" style={{"z-index": -0.1}}/> */}
       <div className="icon-wrapper">
         <img src={jvimg} alt="JV" className="central-icon" />
       </div>
@@ -43,6 +46,7 @@ const Feedback = () => {
       <div className="icon-wrapper">
         <img src={twitterimg} alt="Instagram" className="icon" />
       </div>
+      {/* <img src={formicon} ></img> */}
     </div>
   </section>
     // <section className="contact-section">

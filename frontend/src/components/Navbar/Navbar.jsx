@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full bg-white" style={{height:"97px",borderTop:"1px solid #E6E6E6",display:"flex",justifyContent:"space-between",width:"90%",margin:"0 auto"}}>
+    <div className="w-full bg-white" style={{height:"97px",borderTop:"0px solid rgba(230, 230, 230, 1)",display:"flex",justifyContent:"space-between",width:"90%",margin:"0 auto"}}>
       <nav className="flex items-center justify-between p-4 md:p-6" style={{display:"flex",alignItems:"center",marginTop:"7px"}}>
         <div className="logo flex-shrink-0">
           <img src={assets.logo} alt="Logo" className="h-10 md:h-12" style={{width:"41px",height:"38px"}}  />
@@ -166,7 +166,7 @@ const Navbar = () => {
                 </li>
               </ul>
 
-              <button className="nav-btn pr-[5px] pl-4 py-1 rounded-full flex items-center">
+              <button style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px"}} className="nav-btn pr-[2px] pl-4 py-1 rounded-full flex items-center">
                 Schedule a call
                 <span className="ml-2">
                   <MdArrowForwardIos />

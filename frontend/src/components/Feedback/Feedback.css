@@ -1,14 +1,17 @@
 .contact-section {
-    text-align: center;
-    margin: 50px 0;
+    /* text-align: center;
+    margin: 50px 0; */
     font-family: Arial, sans-serif;
     position: relative;
   }
   
-  .contact-section h2 {
-    font-size: 24px;
+  .TextContainer {
+    color: rgb(17, 21, 34);
+    line-height: 48px;
+    font-weight: 700;
+    font-size: 32px;
     margin-bottom: 30px;
-    color: #2c2c2c;
+    /* color: #2c2c2c; */
   }
   /* .contact-right {
     flex: 2;
@@ -26,8 +29,8 @@
   
   .icon-wrapper {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background-color: #fff;
     padding: 10px;
@@ -63,44 +66,44 @@
   
   /* Positioning for the circular layout */
   .icon-wrapper:nth-child(1) {
-    top: 0%;
-    left: 64%;
+    top: 20%;
+    left: 42%;
     transform: translate(-50%, -50%);
   }
   
   .icon-wrapper:nth-child(2) {
-    top: 36%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .icon-wrapper:nth-child(3) {
-    top: 76%;
+    top: 68%;
     left: 64%;
     transform: translate(-50%, -50%);
   }
   
+  .icon-wrapper:nth-child(3) {
+    top: 113%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  
   .icon-wrapper:nth-child(4) {
-    top: 36%;
-    left: 50%;
+    top: 68%;
+    left: 22%;
     transform: translate(-50%, -50%);
   }
   
   .icon-wrapper:nth-child(5) {
-    top: 1%;
-    left: 28%;
+    top: 20%;
+    left: 2%;
     transform: translate(-50%, -50%) rotate(30deg);
   }
   
   .icon-wrapper:nth-child(6) {
-    top: 36%;
-    left: 15%;
+    top: 68%;
+    left: -16%;
     transform: translate(-50%, -50%);
   }
   
   .icon-wrapper:nth-child(7) {
-    top: 76%;
-    left: 26%;
+    top: 113%;
+    left: -2%;
     transform: translate(-50%, -50%);
   }
   
@@ -117,9 +120,9 @@
   
   .contact-section::before {
     background-image: url('../../assets/Frame3.png'); /* Upper ellipse image */
-    top: 40px; /* Adjust positioning */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 133px; /* Adjust positioning */
+    left: 38%;
+    transform: translateX(-50%) ;
   }
 /*   
   .contact-section::after {

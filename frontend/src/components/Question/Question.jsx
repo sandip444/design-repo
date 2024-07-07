@@ -16,7 +16,7 @@ const Question = () => {
     setIsReadMore(!isReadMore);
   }
   return (
-    <div className="question" style={{backgroundColor:" #f8f8f8" }}>
+    <div className="question" style={{backgroundColor:" rgba(250, 250, 250, 1)" }}>
       <h1>Frequently Asked Questions</h1>
       <div className="question-container">
         {question_list.map((item, index) => (

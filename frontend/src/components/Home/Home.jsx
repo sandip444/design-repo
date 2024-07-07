@@ -13,7 +13,8 @@ import Services from '../Services/Services'
 
 const Home = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className=''>
+      {/* overflow-x-hidden */}
       <Header />
       <Highlights />
       <Task />
