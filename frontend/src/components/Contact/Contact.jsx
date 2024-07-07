@@ -3,6 +3,7 @@ import "./Contact.css";
 import { MdArrowForwardIos } from "react-icons/md";
 import FeedbackForm from "../Feedback/Feedback";
 import axios from "axios";
+import Starbg from "../../icons/stars.svg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -110,7 +111,7 @@ const Contact = () => {
               <label htmlFor="description">Description</label>
             </div>
             <div className="button-container" style={{marginBottom:"1px"}}>
-              <button type="submit" style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px"}}>
+              <button type="submit" style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}}>
                 Submit{" "}
                 <span>
                   <MdArrowForwardIos />

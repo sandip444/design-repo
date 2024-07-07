@@ -4,6 +4,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import { CgMenuMotion } from "react-icons/cg";
 import { RiCloseLargeLine } from "react-icons/ri";
 import "./Navbar.css";
+import Starbg from "../../icons/stars.svg";
 
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -93,8 +94,8 @@ const Navbar = () => {
             />
           </li>
           <li>
-            <button className="nav-btn pr-[5px] pl-4 py-2 rounded-full flex items-center">
-              Schedule a call
+            <button className="nav-btn pr-[5px] pl-4 py-2 rounded-full flex items-center" style={{backgroundImage:`url(${Starbg})`}}>
+              Schedule a call 
               <span className="ml-2">
                 <MdArrowForwardIos />
               </span>
@@ -166,7 +167,7 @@ const Navbar = () => {
                 </li>
               </ul>
 
-              <button style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px"}} className="nav-btn pr-[2px] pl-4 py-1 rounded-full flex items-center">
+              <button style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}} className="nav-btn pr-[2px] pl-4 py-1 rounded-full flex items-center">
                 Schedule a call
                 <span className="ml-2">
                   <MdArrowForwardIos />

@@ -24,6 +24,7 @@
 
 /* Left side content (text) */
 .contact-left {
+    position: relative;
     flex: 1.5; /* Take up remaining space */
     min-width: 300px; /* Minimum width */
     max-width: 500px; /* Maximum width */
@@ -149,7 +150,9 @@ form button {
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .contact-flex {
+        display: flex;
         flex-direction: column; /* Stack items vertically on smaller screens */
+        justify-content: center;
         align-items: center; /* Center align items horizontally */
     }
 
@@ -159,5 +162,33 @@ form button {
 
     .form-group {
         min-width: 100%; /* Full width for input fields on smaller screens */
+    }
+    .icons-container{
+        margin-right: 94px !important;
+
+    }
+    .contact-section::before {
+        /* left: 52% !important; */
+        position: absolute !important;
+        right: 63px !important;
+        margin-left: 52px;
+    }
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media  (max-width: 430px){
+    .contact-section::before {
+        /* left: 52% !important; */
+        position: absolute !important;
+        right: 63px !important;
+        margin-left: 52px;
+    }
+    .icons-container{
+        margin-right: 50px !important;
+
     }
 }

@@ -7,7 +7,8 @@ import Icon1 from "../../assets/icon1.png"
 import Icon2 from "../../assets/icon2.png"
 import Icon3 from "../../assets/icon3.png"
 import Icon4 from "../../assets/icon4.png"
-import HeaderRating from "../../assets/headerRating.png"
+import HeaderRating from "../../assets/headerRating.png";
+import Starbg from "../../icons/stars.svg";
 
 const Header = () => {
   return (
@@ -25,7 +26,7 @@ const Header = () => {
                 <img src={HeaderLeft} alt="header" className="md:float-left mr-8 mb-8 md:mb-0 hidden sm:block hiddenIMages" />
                 <img src={HeaderRight} alt="image" className="md:float-right ml-8 mb-8 md:mb-0 hidden sm:block hiddenIMages" />
                 <div className="button-container flex justify-center md:justify-center" style={{marginTop:"9%"}}>
-                  <button className='text-white font-bold pr-[5px] pl-4 py-2 rounded-full flex items-center' style={{padding:"4px 4px 4px 16px",backgroundColor:"#111522"}}>
+                  <button className='text-white font-bold pr-[5px] pl-4 py-2 rounded-full flex items-center' style={{padding:"4px 4px 4px 16px",backgroundColor:"#111522",backgroundImage:`url(${Starbg})`}}>
                     Contact Us <span className="ml-2"><MdArrowForwardIos /></span>
                   </button>
                 </div>

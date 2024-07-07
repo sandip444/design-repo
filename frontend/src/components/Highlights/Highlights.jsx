@@ -3,7 +3,8 @@ import "./Highlights.css";
 import { MdArrowForwardIos } from 'react-icons/md';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { portfolio_list } from "../../assets/assets";
-import Hireme from "../../assets/Hire_Me.png"
+import Hireme from "../../assets/Hire_Me.png";
+import Starbg from "../../icons/stars.svg";
 
 const Highlights = () => {
   const [filter, setFilter] = useState("All");
@@ -90,12 +91,13 @@ const Highlights = () => {
 
 
         </div>
+        <div className="" style={{ display: "flex", justifyContent: "center" }}>
         <div className="PortfolioBtn" 
           //  className="relative mt-[-30px]"
-          style={{ display: "flex", justifyContent: "center",left:"38%" }}
+          style={{ display: "flex", justifyContent: "center" }}
         >
          <div>
-         <button style={{padding:"4px 4px 4px 16px",backgroundColor:"#111522",fontSize:"16px",lineHeight:"20px",fontWeight:"700px"}}
+         <button style={{padding:"4px 4px 4px 16px",backgroundColor:"#111522",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}}
           // className="view-all-button bg-black text-white py-2 px-4 rounded-full relative z-10 mx-auto block md:inline-block"
           >
             View all Portfolio
@@ -105,7 +107,7 @@ const Highlights = () => {
           // className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-16 w-52 bg-gray-300 rounded-full opacity-50 z-0 mt-[-70px] py-[32px] px-6"
           ></div>
         </div>
-
+        </div>
       </div>
     </>
   );

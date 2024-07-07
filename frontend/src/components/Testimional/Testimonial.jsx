@@ -200,7 +200,7 @@ const TestimonialSlider = () => {
         {testimonialReview.map((testimonial, index) => (
           <div
             key={index}
-            className="inline-block max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg w-full bg-white shadow-lg rounded-lg overflow-hidden m-4 h-full"
+            className="inline-block max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-white shadow-lg rounded-lg overflow-hidden m-4 h-full"
           >
             {/* <img
               src={LowerComma}
@@ -209,12 +209,12 @@ const TestimonialSlider = () => {
             /> */}
             <div className="p-4 h-full flex flex-col justify-between">
              
-                <div className="flex items-center">
+                <div className="flex items-center" style={{display:"flex",padding:"0px 2px"}}>
                   <div>
                   <img
                     src={testimonial.logo}
                     alt={testimonial.logo}
-                    className=" h-12 rounded-full mr-4"
+                    className=" h-12 rounded-full " style={{maxWidth:"none"}}
                   />
                     </div>
                   <div className="FlexAlign">
