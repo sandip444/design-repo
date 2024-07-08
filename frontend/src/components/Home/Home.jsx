@@ -5,7 +5,7 @@ import Highlights from '../Highlights/Highlights'
 import Task from '../Task/Task'
 import Digital from '../Digital/Digital'
 import About from '../About/About'
-import Testimional from '../Testimional/Testimional'
+import TestimonialSlider from '../Testimional/Testimonial'
 import Blog from '../Blog/Blog'
 import Question from '../Question/Question'
 import Contact from '../Contact/Contact'
@@ -13,14 +13,15 @@ import Services from '../Services/Services'
 
 const Home = () => {
   return (
-    <div className='overflow-x-hidden'>
+    <div className=''>
+      {/* overflow-x-hidden */}
       <Header />
       <Highlights />
       <Task />
       <Services/>
       <Digital />
       <About />
-      <Testimional />
+      <TestimonialSlider />
       <Blog />
       <Question/>
       <Contact/>

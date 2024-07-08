@@ -1,0 +1,263 @@
+/* .testimonial-slider { */
+/* width: 80%; */
+/* margin: auto; */
+/* padding: 40px 0; */
+/* } */
+/*  */
+/* .testimonial-slide { */
+/* display: flex; */
+/* background-color: #fff; */
+/* border-radius: 10px; */
+/* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+/* overflow: hidden; */
+/* align-items: center; */
+/* } */
+/*  */
+/* .video-container { */
+/* flex: 1; */
+/* max-width: 50%; */
+/* padding: 20px; */
+/* } */
+/*  */
+/* .testimonial-content { */
+/* flex: 1; */
+/* padding: 20px; */
+/* display: flex; */
+/* flex-direction: column; */
+/* justify-content: center; */
+/* align-items: center; */
+/* } */
+/*  */
+/* .company-logo { */
+/* width: 50px; */
+/* margin-bottom: 10px; */
+/* } */
+/*  */
+/* .title { */
+/* font-weight: bold; */
+/* margin-top: 10px; */
+/* } */
+/*  */
+/* .text { */
+/* margin: 20px 0; */
+/* text-align: center; */
+/* } */
+/*  */
+/* .rating { */
+/* display: flex; */
+/* align-items: center; */
+/* font-size: 1.2em; */
+/* } */
+/*  */
+/* .rating span { */
+/* margin-left: 10px; */
+/* } */
+/*  */
+/* .video-responsive { */
+/* overflow: hidden; */
+/* padding-bottom: 56.25%; */
+/* position: relative; */
+/* height: 0; */
+/* } */
+/*  */
+/* .video-responsive iframe { */
+/* left: 0; */
+/* top: 0; */
+/* height: 100%; */
+/* width: 100%; */
+/* position: absolute; */
+/* } */
+/*  */
+/* .slick-prev, .slick-next { */
+/* width: 30px; */
+/* height: 30px; */
+/* z-index: 1; */
+/* } */
+/*  */
+/* .slick-prev:before, .slick-next:before { */
+/* font-size: 30px; */
+/* color: #000; */
+/* } */
+/*  */
+
+.testimonial-slider {
+  background-color: #FAFAFA;
+  padding: 2rem;
+  position: relative;
+  padding :48px !important;
+}
+.slick-slider{
+  border: 1px solid rgba(239, 240, 246, 1);
+    
+    border-radius: 32px;
+    background-color:rgba(255, 255, 255, 1);
+}
+.slick-dots {
+  position: absolute;
+  bottom: 5px !important;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.testimonial-logo {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-heading {
+  margin-bottom: 2rem;
+}
+
+.testimonial-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 560px;
+  margin-bottom: 1rem;
+  border-radius: 32px;
+}
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  border-radius: 32px;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial-content {
+  text-align: left;
+  padding: 1rem;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+.rating span {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.custom-dots {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.custom-indicator {
+  width: 20px;
+  height: 20px;
+}
+
+.LowerinvertedComma {
+  height: 26px;
+  width: 26px;
+  /* opacity: 7%; */
+  position: absolute;
+  right: -25px;
+  top: -5px;
+}
+
+.UpperinvertedComma {
+  position: relative;
+  top: 20px;
+  left: -30px;
+}
+
+.indicator-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slick-active .custom-indicator .indicator-image {
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.horizontal-scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.text-head {
+  display: flex;
+  gap: 8px;
+}
+
+.text-title {
+  /* height: 32px;
+    width: 127px; */
+}
+
+.widthInc {
+  width: 343px !important;
+  height: 42px;
+}
+.font-bold{
+  font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.FlexProp{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 12px;
+}
+@media (max-width: 480px) {
+  .widthInc {
+    width: 6rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .widthInc {
+    width: 250px !important;
+    height: 42px;
+  }
+
+  .FlexCol {
+    display: flex;
+    flex-direction: column;
+  }
+}

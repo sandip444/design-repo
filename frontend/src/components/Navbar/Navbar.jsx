@@ -3,11 +3,17 @@ import { assets } from "../../assets/assets";
 import { MdArrowForwardIos } from "react-icons/md";
 import { CgMenuMotion } from "react-icons/cg";
 import { RiCloseLargeLine } from "react-icons/ri";
+import { useNavigate} from "react-router-dom"
+// import { createBrowserHistory } from 'history';
 import "./Navbar.css";
+import Starbg from "../../icons/stars.svg";
 
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const redirect = useNavigate()
+
+  // const history = createBrowserHistory();
 
   const handleMouseEnter = (item) => {
     setHoveredItem(item);
@@ -26,12 +32,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full bg-white shadow-md">
-      <nav className="flex items-center justify-between p-4 md:p-6">
-        <div className="logo flex-shrink-0">
-          <img src={assets.logo} alt="Logo" className="h-10 md:h-12" />
+    <div className="w-full bg-white" style={{height:"97px",borderTop:"0px solid rgba(230, 230, 230, 1)",display:"flex",justifyContent:"space-between",width:"90%",margin:"0 auto"}}>
+      <nav className="flex items-center justify-between p-4 md:p-6" style={{display:"flex",alignItems:"center",marginTop:"7px"}}>
+        <div onClick={()=>{redirect('/home')}} className="logo flex-shrink-0">
+          <img src={assets.logo} alt="Logo" className="h-10 md:h-12" style={{width:"41px",height:"38px",cursor:"pointer"}}  />
         </div>
+    <div className="NavIcons">
 
+   
         <div className="md:hidden">
           {!isDrawerOpen && (
             <button
@@ -43,7 +51,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <ul className="hidden md:flex items-center space-x-4 md:space-x-8 text-sm md:text-base">
+        <ul className="hidden md:flex items-center space-x-4 text-sm md:text-base" style={{height: "50px",marginTop:"7px"}}>
           <p className="hidden sm:block">All Categories</p>
 
           <li
@@ -91,19 +99,20 @@ const Navbar = () => {
             />
           </li>
           <li>
-            <button className="nav-btn pr-[5px] pl-4 py-2 rounded-full flex items-center">
-              Schedule a call
+            <button className="nav-btn pr-[5px] pl-4 py-2 rounded-full flex items-center" style={{backgroundImage:`url(${Starbg})`}}>
+              Schedule a call 
               <span className="ml-2">
                 <MdArrowForwardIos />
               </span>
             </button>
           </li>
         </ul>
+        </div>
       </nav>
 
       {isDrawerOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 z-50">
-          <div className="fixed inset-y-0 left-0 w-64 bg-white shadow-lg p-4 z-50">
+          <div className="fixed inset-y-0 left-0 w-64 bg-white shadow-lg p-2 z-50">
             <div className="flex justify-between items-center mb-4">
               <div className="logo flex-shrink-0 mt-3">
                 <img src={assets.logo} alt="Logo" className="h-10 md:h-12" />
@@ -117,6 +126,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex flex-col space-y-4">
+              <p className="">All Categories</p>
               <ul className="flex flex-row space-x-4">
                 <li
                   onMouseEnter={() => handleMouseEnter("Globe")}
@@ -161,13 +171,14 @@ const Navbar = () => {
                   />
                 </li>
               </ul>
-
-              <button className="nav-btn pr-[5px] pl-4 py-1 rounded-full flex items-center">
+              <div>
+              <button style={{padding:"4px 4px 4px 16px",backgroundColor:"#111522",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}}>
                 Schedule a call
                 <span className="ml-2">
                   <MdArrowForwardIos />
                 </span>
               </button>
+              </div>
             </div>
           </div>
         </div>

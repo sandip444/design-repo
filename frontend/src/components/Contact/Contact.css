@@ -4,9 +4,9 @@
     min-height: 100vh; /* Full viewport height */
     padding: 40px 20px; /* Space around content */
     box-sizing: border-box; /* Include padding in width calculation */
-    background-color: #f8f8f8; /* Light background color */
+    /* Light background color */
     display: flex; /* Flex container for vertical centering */
-    justify-content: center; /* Center horizontally */
+    justify-content: space-evenly; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
 
@@ -14,18 +14,21 @@
 .contact-flex {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 40px; /* Gap between items */
-    justify-content: center; /* Center items horizontally */
-    align-items: flex-start; /* Align items at the top */
-    width: 100%; /* Full width within its container */
-    max-width: 1200px; /* Limit maximum width */
+    /* gap: 100px; Gap between items */
+    padding: 46px 0px;
+    /* justify-content: center; Center items horizontally */
+    /* align-items: flex-start; Align items at the top */
+    /* width: 100%; Full width within its container */
+    /* max-width: 1200px; Limit maximum width */
 }
 
 /* Left side content (text) */
 .contact-left {
-    flex: 1; /* Take up remaining space */
+    position: relative;
+    flex: 1.5; /* Take up remaining space */
     min-width: 300px; /* Minimum width */
     max-width: 500px; /* Maximum width */
+    margin-top: 34px;
 }
 
 /* Heading within the left content */
@@ -37,20 +40,33 @@
 /* Right side content (form) */
 .contact-right {
     flex: 2; /* Take up more space than the left side */
-    min-width: 300px; /* Minimum width */
-    max-width: 600px; /* Maximum width */
+    /* min-width: 300px; Minimum width */
+    /* max-width: 600px; Maximum width */
+    /* width: 629px;
+    height: 509px; */
+    border-radius: 24px;
+    margin-left: 6%;
+    /* border: 1px solid #DBDCE2; */
+    /* padding: 32px; */
+    /* box-shadow: 0px 5px 14px 0px rgba(8, 15, 52, 0.04) !important; */
 }
 
 /* Styling for the form itself */
 form {
+    /* width: 565px; */
+    height: 445px;
     background-color: white; /* White background */
-    padding: 50px 40px; /* Padding inside the form */
-    border-radius: 30px; /* Rounded corners */
+    padding: 32px; /* Padding inside the form */
+    border-radius: 24px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    min-height: 70vh; /* Minimum height of 70% viewport height */
+    /* min-height: 70vh; Minimum height of 70% viewport height */
     display: flex; /* Flex container for vertical centering */
     flex-direction: column; /* Stack form elements vertically */
     justify-content: center; /* Center elements vertically */
+    gap: 32px;
+    /* border: 1px solid #DBDCE2; */
+    
+
 }
 
 /* Flex container for form fields */
@@ -76,7 +92,7 @@ input, textarea {
     padding: 15px; /* Padding inside the field */
     font-size: 20px;
     border: 1px solid #c5c5c5; /* Light border */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 5px; /* Rounded corners */
     outline: none; /* Remove default outline */
     background: transparent; /* Transparent background */
     transition: border-color 0.3s ease; /* Smooth transition for border color */
@@ -87,18 +103,22 @@ input, textarea {
 /* Focus styles for input and textarea */
 input:focus, textarea:focus {
     border-color: black; /* Dark border on focus */
+    padding-left: 4px;
 }
 
 /* Styling for labels */
 label {
     position: absolute; /* Absolute positioning for label */
-    top: 10px; /* Distance from input field */
-    left: 10px; /* Distance from input field */
-    color: #999; /* Light gray color */
+    top: 1px; /* Distance from input field */
+    left: 5px; /* Distance from input field */
     pointer-events: none; /* Disable pointer events */
     transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease; /* Smooth transitions */
     background-color: white; /* White background for visibility */
     padding: 0 5px; /* Padding around text */
+    font-size: 16px ;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(115, 123, 137, 1);
 }
 
 /* Label positioning on focus or when input is filled */
@@ -120,24 +140,70 @@ textarea {
 }
 
 form button {
-    display: flex; /* Flex container for alignment */
-    justify-content: center;
-    align-items: center; /* Center align content vertically */
-    margin-top: 10px; /* Space above the button */
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding: 4px 4px 4px 16px;
+    background-color: #111522;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .contact-flex {
+        display: flex;
         flex-direction: column; /* Stack items vertically on smaller screens */
+        justify-content: center;
         align-items: center; /* Center align items horizontally */
     }
-
+    .contact-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
     .multi-fields {
         flex-direction: column; /* Stack fields vertically on smaller screens */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 0px;
     }
 
     .form-group {
         min-width: 100%; /* Full width for input fields on smaller screens */
+    }
+    .icons-container{
+        margin-right: 94px !important;
+
+    }
+    .contact-section::before {
+        /* left: 52% !important; */
+        position: absolute !important;
+        right: 63px !important;
+        margin-left: 52px;
+    }
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .TextContainer{
+        font-size: 22px !important;
+    }
+}
+@media  (max-width: 430px){
+    .contact-section::before {
+        /* left: 52% !important; */
+        position: absolute !important;
+        right: 63px !important;
+        margin-left: 52px;
+    }
+    .icons-container{
+        margin-right: 50px !important;
+
     }
 }

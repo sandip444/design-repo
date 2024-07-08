@@ -1,32 +1,43 @@
 .contact-section {
-    text-align: center;
-    margin: 50px 0;
+    /* text-align: center;
+    margin: 50px 0; */
     font-family: Arial, sans-serif;
     position: relative;
   }
   
-  .contact-section h2 {
-    font-size: 24px;
+  .TextContainer {
+    color: rgb(17, 21, 34);
+    line-height: 48px;
+    font-weight: 700;
+    font-size: 32px;
     margin-bottom: 30px;
-    color: #2c2c2c;
+    /* color: #2c2c2c; */
   }
-  
+  /* .contact-right {
+    flex: 2;
+    /* width: 629px; */
+    /* min-width: 300px; */
+    /* max-width: 700px; */
+    /* height: 509px !important; */
+/* } */ 
   .icons-container {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
   }
   
   .icon-wrapper {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background-color: #fff;
     padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1.5px solid rgba(17, 21, 34, 0.08);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     transition: transform 0.3s ease;
+    
   }
   
   .icon-wrapper:hover .icon {
@@ -55,44 +66,44 @@
   
   /* Positioning for the circular layout */
   .icon-wrapper:nth-child(1) {
-    top: 0%;
-    left: 50%;
+    top: 20%;
+    left: 42%;
     transform: translate(-50%, -50%);
   }
   
   .icon-wrapper:nth-child(2) {
-    top: 25%;
-    left: 85%;
+    top: 68%;
+    left: 64%;
     transform: translate(-50%, -50%);
   }
   
   .icon-wrapper:nth-child(3) {
-    top: 75%;
-    left: 85%;
+    top: 113%;
+    left: 40%;
     transform: translate(-50%, -50%);
   }
   
   .icon-wrapper:nth-child(4) {
-    top: 50%;
-    left: 50%;
+    top: 68%;
+    left: 22%;
     transform: translate(-50%, -50%);
   }
   
   .icon-wrapper:nth-child(5) {
-    top: 75%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 2%;
+    transform: translate(-50%, -50%) rotate(30deg);
   }
   
   .icon-wrapper:nth-child(6) {
-    top: 25%;
-    left: 15%;
+    top: 68%;
+    left: -16%;
     transform: translate(-50%, -50%);
   }
   
   .icon-wrapper:nth-child(7) {
-    top: 100%;
-    left: 50%;
+    top: 113%;
+    left: -2%;
     transform: translate(-50%, -50%);
   }
   
@@ -109,10 +120,19 @@
   
   .contact-section::before {
     background-image: url('../../assets/Frame3.png'); /* Upper ellipse image */
-    top: 40px; /* Adjust positioning */
+    top: 127px; /* Adjust positioning */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) ;
   }
+  @media  (max-width: 768px){
+    .contact-section::before {
+       /* Upper ellipse image */
+      top: 79px; /* Adjust positioning */
+      left: 38%;
+    }
+}
+
+/* 541-762 */
 /*   
   .contact-section::after {
     background-image: url('../../assets/Ellipse2.png'); 

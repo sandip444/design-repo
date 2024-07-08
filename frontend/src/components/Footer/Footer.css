@@ -1,8 +1,8 @@
 footer {
-    background-color: black;
+    background-color:#111522;
     color: white;
     width: 100%;
-    padding: 80px 150px;
+    padding: 40px;
     box-sizing: border-box;
 }
 
@@ -20,6 +20,8 @@ footer {
 
 .footer-left {
     text-align: left;
+    color: 
+    #D0D5DD;
 }
 
 .footer-right {
@@ -36,6 +38,17 @@ footer {
     list-style: none;
     margin: 20px 0;
     font-size: 18px;
+   
+}
+
+.footer-left ul li a{
+    color:#EAECF0;
+    
+}
+.email img{
+    position: relative;
+    top: 24px;
+    right:24px;
 }
 
 footer a {
@@ -49,7 +62,7 @@ footer a:hover {
 
 footer hr {
     width: 100%;
-    border: 0.5px solid #444;
+    border: 1px solid rgba(71, 84, 103, 0.3);
     margin: 20px 0;
 }
 
@@ -58,7 +71,7 @@ footer hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 32px;
 }
 
 .footer-bottom .footer-left {
@@ -71,3 +84,25 @@ footer hr {
     flex-direction: column;
     align-items: flex-end; /* Align items to the right */
 }
+@media screen and (min-width: 375px) and (max-width: 768px) { 
+    
+    .footer-left ul,
+    .footer-right .brand ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+        margin: 20px 0;
+        font-size: 18px;
+    }  
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-right{
+        display: flex;
+        align-items: center;
+    }
+}
+
+    

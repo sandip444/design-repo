@@ -3,6 +3,7 @@ import "./Contact.css";
 import { MdArrowForwardIos } from "react-icons/md";
 import FeedbackForm from "../Feedback/Feedback";
 import axios from "axios";
+import Starbg from "../../icons/stars.svg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,12 +40,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" style={{backgroundColor:"rgba(255, 255, 255, 1)"}}>
       <div className="contact-flex">
         <div className="contact-left">
           <FeedbackForm />
         </div>
-        <div className="contact-right">
+        <div  className="contact-right">
           <form onSubmit={handleSubmit}>
             <div className="multi-fields">
               <div className="form-group">
@@ -109,8 +110,8 @@ const Contact = () => {
               ></textarea>
               <label htmlFor="description">Description</label>
             </div>
-            <div className="button-container">
-              <button type="submit">
+            <div className="button-container" style={{marginBottom:"1px"}}>
+              <button type="submit" style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}}>
                 Submit{" "}
                 <span>
                   <MdArrowForwardIos />
