@@ -21,9 +21,11 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-right">
+          <div>
           <div className="email">
             <img src={emailIcon} style={{ stroke: "#FFF", }}></img>
             <a href="mailto:jayvaghasiya5232@gmail.com">jayvaghasiya5232@gmail.com</a>
+          </div>
           </div>
           <div className="brand">
             <ul>

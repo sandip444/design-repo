@@ -14,7 +14,7 @@
 .contact-flex {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 100px; /* Gap between items */
+    /* gap: 100px; Gap between items */
     padding: 46px 0px;
     /* justify-content: center; Center items horizontally */
     /* align-items: flex-start; Align items at the top */
@@ -103,6 +103,7 @@ input, textarea {
 /* Focus styles for input and textarea */
 input:focus, textarea:focus {
     border-color: black; /* Dark border on focus */
+    padding-left: 4px;
 }
 
 /* Styling for labels */
@@ -110,11 +111,14 @@ label {
     position: absolute; /* Absolute positioning for label */
     top: 1px; /* Distance from input field */
     left: 5px; /* Distance from input field */
-    color: #999; /* Light gray color */
     pointer-events: none; /* Disable pointer events */
     transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease; /* Smooth transitions */
     background-color: white; /* White background for visibility */
     padding: 0 5px; /* Padding around text */
+    font-size: 16px ;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(115, 123, 137, 1);
 }
 
 /* Label positioning on focus or when input is filled */
@@ -155,9 +159,17 @@ form button {
         justify-content: center;
         align-items: center; /* Center align items horizontally */
     }
-
+    .contact-flex{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
     .multi-fields {
         flex-direction: column; /* Stack fields vertically on smaller screens */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-bottom: 0px;
     }
 
     .form-group {
@@ -178,6 +190,9 @@ form button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .TextContainer{
+        font-size: 22px !important;
     }
 }
 @media  (max-width: 430px){

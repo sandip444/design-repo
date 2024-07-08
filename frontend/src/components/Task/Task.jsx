@@ -17,7 +17,7 @@ const Task = () => {
             <img src={CircleNumber} alt="" className="circle-bg absolute" />
             <h1 className="text-xl font-semibold relative">{item.task_number}</h1>
           </div>
-          <h1 className="text-md font-red-rose text-[#6F6C90] text-center" style={{fontWeight:"400",fontSize:"18px",lineHeight:"25px",color:"#6F6C90"}}>{item.task_name}</h1>
+          <h1 className="text-md font-inter text-[#6F6C90] text-center" style={{fontWeight:"400",fontSize:"18px",lineHeight:"25px",color:"#6F6C90"}}>{item.task_name}</h1>
         </div>
       ))}
     </div>

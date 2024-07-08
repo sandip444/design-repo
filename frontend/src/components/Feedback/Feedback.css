@@ -22,8 +22,8 @@
 /* } */ 
   .icons-container {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
   }
   
@@ -120,10 +120,19 @@
   
   .contact-section::before {
     background-image: url('../../assets/Frame3.png'); /* Upper ellipse image */
-    top: 133px; /* Adjust positioning */
-    left: 38%;
+    top: 127px; /* Adjust positioning */
+    left: 50%;
     transform: translateX(-50%) ;
   }
+  @media  (max-width: 768px){
+    .contact-section::before {
+       /* Upper ellipse image */
+      top: 79px; /* Adjust positioning */
+      left: 38%;
+    }
+}
+
+/* 541-762 */
 /*   
   .contact-section::after {
     background-image: url('../../assets/Ellipse2.png'); 

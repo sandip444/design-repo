@@ -1,7 +1,8 @@
 .question {
     width: 100%;
     min-height: 100vh;
-    padding: 40px 60px;
+    padding: 30px 60px;
+    margin-top: 26px;
 }
 
 .question h1 {

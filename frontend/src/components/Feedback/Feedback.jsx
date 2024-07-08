@@ -6,7 +6,8 @@ import upimg from "../../icons/up.png";
 import instaimg from "../../icons/instagram-icon.png"
 import twitterimg from "../../icons/twitter-icon.png"
 import beimg from "../../icons/Be.png";
-import jvimg from "../../icons/Jv.png"
+// import jvimg from "../../icons/Jv.png"
+// import JVImage from "../../icons/JVicon.svg";
 import ballimg from "../../icons/pinkball.png"
 import formicon from "../../icons/Illustration.svg";
 // import LinkedInIcon from 'path/to/linkedin-icon.png';
@@ -24,7 +25,7 @@ const Feedback = () => {
     Fill out the form below to get in touch with us.
     </div>
     <div className="icons-container">
-      <div className="icon-wrapper">
+      {/* <div className="icon-wrapper">
         <img src={Linkedinimg} alt="Dribbble" className="icon" />
       </div>
       <div className="icon-wrapper">
@@ -32,9 +33,9 @@ const Feedback = () => {
       </div>
       <div className="icon-wrapper">
         <img src={instaimg} alt="Behance" className="icon" />
-      </div>
+      </div> */}
        {/* <img src={assets.Ellipse} alt="" style={{"z-index": -0.1}}/> */}
-      <div className="icon-wrapper">
+      {/* <div className="icon-wrapper">
         <img src={jvimg} alt="JV" className="central-icon" />
       </div>
       <div className="icon-wrapper">
@@ -45,8 +46,8 @@ const Feedback = () => {
       </div>
       <div className="icon-wrapper">
         <img src={twitterimg} alt="Instagram" className="icon" />
-      </div>
-      {/* <img src={formicon} ></img> */}
+      </div> */}
+      <img src={formicon} ></img>
     </div>
   </section>
     // <section className="contact-section">

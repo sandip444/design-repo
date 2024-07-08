@@ -84,6 +84,7 @@
   background-color: #FAFAFA;
   padding: 2rem;
   position: relative;
+  padding :48px !important;
 }
 .slick-slider{
   border: 1px solid rgba(239, 240, 246, 1);
