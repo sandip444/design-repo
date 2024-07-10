@@ -1,0 +1,13 @@
+
+
+
+@media (max-width:768px) {
+    .widthDec{
+        width: 326px;
+        height: auto;
+    }
+    .centrecards{
+        display: flex;
+        align-items: center;
+    }
+}

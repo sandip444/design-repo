@@ -52,7 +52,7 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden md:flex items-center space-x-4 text-sm md:text-base" style={{height: "50px",marginTop:"7px"}}>
-          <p className="hidden sm:block">All Categories</p>
+          <p className="">All Categories</p>
 
           <li
             onMouseEnter={() => handleMouseEnter("Globe")}

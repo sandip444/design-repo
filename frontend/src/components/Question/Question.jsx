@@ -19,7 +19,7 @@ const Question = () => {
   return (
     <div className="question" style={{backgroundColor:" rgba(250, 250, 250, 1)" }}>
       <h1>Frequently Asked Questions</h1>
-      <div className="question-container" style={{display:"flex",flexDirection:"column",gap:"20px"}} >
+      <div className="question-container" style={{display:"flex",flexDirection:"column",gap:"20px",marginBottom:"-70px"}} >
         {question_list.map((item, index) => (
           (index < Enabled) && (
             <div

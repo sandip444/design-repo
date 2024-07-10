@@ -146,6 +146,13 @@
   .YourChoice {
     display: none;
   }
+  .about-icons span {
+    font-weight: bold;
+    margin-right: 0px !important;
+  }
+  .space-x-2 > :not([hidden]) ~ :not([hidden]){
+    margin-left: 0px !important;
+  }
 }
 
 @media (max-width: 430px) {
@@ -170,6 +177,13 @@
     position: absolute;
     left: 66%;
     top: 0;
+  }
+  .about-icons span {
+    font-weight: bold;
+    margin-right: 0px !important;
+  }
+  .space-x-2 > :not([hidden]) ~ :not([hidden]){
+    margin-left: 0px !important;
   }
 
 }

@@ -63,6 +63,19 @@
     left: 50%;
     position: absolute;
   }
+
+  .centercircle{
+    box-shadow: 0 26px 16px -5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    width: 56px;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    /* box-shadow: 0 26px 16px -5px rgba(0, 0, 0, 0.3); */
+    background-color: transparent;
+  }
   
   /* Positioning for the circular layout */
   .icon-wrapper:nth-child(1) {
@@ -119,11 +132,13 @@
   }
   
   .contact-section::before {
-    background-image: url('../../assets/Frame3.png'); /* Upper ellipse image */
+    /* background-image: url('../../assets/Frame3.png'); */
+     /* Upper ellipse image */
     top: 127px; /* Adjust positioning */
     left: 50%;
     transform: translateX(-50%) ;
   }
+
   @media  (max-width: 768px){
     .contact-section::before {
        /* Upper ellipse image */

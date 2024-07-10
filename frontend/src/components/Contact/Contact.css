@@ -2,7 +2,7 @@
 .contact {
     width: 100%;
     min-height: 100vh; /* Full viewport height */
-    padding: 40px 20px; /* Space around content */
+    padding: 20px; /* Space around content */
     box-sizing: border-box; /* Include padding in width calculation */
     /* Light background color */
     display: flex; /* Flex container for vertical centering */
@@ -79,6 +79,7 @@ form {
 
 /* Individual form field group */
 .form-group {
+    height: 60px;
     position: relative; /* Relative positioning for label */
     flex: 1; /* Take up equal space */
     min-width: calc(50% - 10px); /* Calculate width for two columns */
@@ -91,7 +92,7 @@ input, textarea {
     width: 100%; /* Full width of container */
     padding: 15px; /* Padding inside the field */
     font-size: 20px;
-    border: 1px solid #c5c5c5; /* Light border */
+    border: 1px solid #E2E0EB; /* Light border */
     border-radius: 5px; /* Rounded corners */
     outline: none; /* Remove default outline */
     background: transparent; /* Transparent background */
@@ -102,14 +103,14 @@ input, textarea {
 
 /* Focus styles for input and textarea */
 input:focus, textarea:focus {
-    border-color: black; /* Dark border on focus */
-    padding-left: 4px;
+    border-color:  #c5c5c5; /* Dark border on focus */
+    padding-left: 10px;
 }
 
 /* Styling for labels */
 label {
     position: absolute; /* Absolute positioning for label */
-    top: 1px; /* Distance from input field */
+    top: 16px; /* Distance from input field */
     left: 5px; /* Distance from input field */
     pointer-events: none; /* Disable pointer events */
     transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease; /* Smooth transitions */
@@ -153,6 +154,14 @@ form button {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    .form-group input{
+        padding: 8px 0px;
+    }
+    .form-group label{
+        top: 10px;
+    left: 5px;
+    }
+
     .contact-flex {
         display: flex;
         flex-direction: column; /* Stack items vertically on smaller screens */
@@ -162,7 +171,7 @@ form button {
     .contact-flex{
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        /* gap: 100px; */
     }
     .multi-fields {
         flex-direction: column; /* Stack fields vertically on smaller screens */
@@ -174,6 +183,7 @@ form button {
 
     .form-group {
         min-width: 100%; /* Full width for input fields on smaller screens */
+        height: 60px !important;
     }
     .icons-container{
         margin-right: 94px !important;
@@ -207,3 +217,11 @@ form button {
 
     }
 }
+
+@media  (max-width: 375px){
+    .icons-container{
+        margin-right: 0px !important;
+
+    }
+}
+

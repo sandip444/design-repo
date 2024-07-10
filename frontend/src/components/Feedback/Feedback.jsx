@@ -47,6 +47,7 @@ const Feedback = () => {
       <div className="icon-wrapper">
         <img src={twitterimg} alt="Instagram" className="icon" />
       </div> */}
+      <div className="centercircle"></div>
       <img src={formicon} ></img>
     </div>
   </section>

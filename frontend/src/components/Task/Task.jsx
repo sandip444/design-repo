@@ -5,7 +5,7 @@ import CircleNumber from "../../assets/circlebg.png";
 
 const Task = () => {
   return (
-    <div className="py-8 rounded-3xl flex flex-wrap justify-center mx-8 relative" style={{border: "0.5px solid #E5E6EC"}}>
+    <div className="spacing py-8 rounded-3xl flex flex-wrap justify-center mx-8 relative" style={{border: "0.5px solid #E5E6EC"}}>
       {task_list.map((item, index) => (
         <div
           key={index}

@@ -2,6 +2,10 @@
     width: 100%;
     min-height: 100vh;
   }
+
+  .blog{
+    padding: 0 120px !important;
+  }
   
   .blog h1 {
     text-align: center;
@@ -95,6 +99,14 @@
   }
   
   /* Responsive design for smaller screens */
+  @media (max-width: 900px) {
+    .blog{
+      padding: 0 60px !important;
+    }
+  }
+  
+
+ 
   @media (max-width: 768px) {
     .blog-container {
       flex-direction: column;
