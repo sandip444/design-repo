@@ -3,7 +3,7 @@
 
 @media (max-width:768px) {
     .widthDec{
-        width: 326px;
+        /* width: 326px; */
         height: auto;
     }
     .centrecards{

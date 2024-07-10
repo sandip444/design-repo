@@ -21,7 +21,7 @@ const Feedback = () => {
   return (
 
     <section className="contact-section">
-    <div className="TextContainer">
+    <div className="TextContainer" >
     Fill out the form below to get in touch with us.
     </div>
     <div className="icons-container">

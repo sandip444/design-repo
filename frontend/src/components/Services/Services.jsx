@@ -14,14 +14,14 @@ const Services = () => {
       </div>
       <div className="centrecards flex flex-col md:flex-row mt-6 px-5 font-red-rose space-y-6 md:space-y-0 md:space-x-6 mb-10">
        <div className="border border-[#E1E1E1] widthDec p-4 rounded-lg flex-1 px-5 py-4 shadow-drop-custom">
-          <div className="flex items-center mb-4" style={{width:"300px",height:"200px",display:"flex",justifyContent:"center"}}>
+          <div className="flex items-center mb-4" style={{height:"200px",display:"flex",justifyContent:"center"}}>
             <img src={WebLanding} alt="Website & Landing Page" className="w-12 h-12 mr-4" style={{width:"100%",height:"100%"}}/>
           </div>
             <h5 className="text-lg font-semibold">Website & Landing Page</h5>
           <p className='text-[#667085] text-sm'>As a top-rated UI/UX designer, I create visually appealing and engaging logos and landing pages. Leveraging my expertise in website UX/UI design, I deliver optimal and pleasant browsing experiences for your users.</p>
         </div>
         <div className="border border-[#E1E1E1] widthDec p-4  rounded-lg flex-1 px-5 py-4 shadow-drop-custom" style={{flexDirection:"column"}}>
-          <div className="flex items-center mb-4" style={{width:"300px",height:"200px",display:"flex",justifyContent:"center"}} >
+          <div className="flex items-center mb-4" style={{height:"200px",display:"flex",justifyContent:"center"}} >
             <img src={WebApp} alt="Web App & Dashboard" className="w-12 h-12 mr-4" style={{width:"100%",height:"100%"}}  />
           </div>
          <div className="">
@@ -30,7 +30,7 @@ const Services = () => {
          </div>
         </div>
         <div className="border border-[#E1E1E1] widthDec p-4 rounded-lg flex-1 px-5 py-4 shadow-drop-custom">
-          <div className="flex items-center mb-4" style={{width:"300px",height:"200px",display:"flex",justifyContent:"center"}}>
+          <div className="flex items-center mb-4" style={{height:"200px",display:"flex",justifyContent:"center"}}>
             <img src={MobileApp} alt="Mobile App" className="w-12 h-12 mr-4" />
           </div>
             <h5 className="text-lg font-semibold">Mobile App</h5>

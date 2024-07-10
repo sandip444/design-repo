@@ -15,9 +15,9 @@ import humanicon from "../../icons/testimonial description icon.png";
 import testimonialTextTitle from "../../icons/testimonial text title.png";
 
 const YouTubeEmbed = ({ embedId }) => (
-  <div className="video-responsive" style={{height:"457px",width:"676px !important"}}>
+  <div className="video-responsive" style={{height:"457px",width:"676px !important",display:"flex"}}>
     <iframe
-     style={{width:"676px",height:"457px"}}
+     style={{width:"100%",height:"457px",margin:"0 auto"}}
       src={`https://www.youtube.com/embed/${embedId}`}
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -202,7 +202,7 @@ const TestimonialSlider = () => {
         </h3>
       </div>
       
-      <div className="horizontal-scroll-container overflow-x-auto whitespace-nowrap py-4">
+      <div className=" horizontal-scroll-container overflow-x-auto whitespace-nowrap py-4" style={{position:"relative"}}>
         {testimonialReview.map((testimonial, index) => (
           <div
             key={index}
@@ -213,9 +213,18 @@ const TestimonialSlider = () => {
               alt=""
               className="absolute bottom-12 -right-8 w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-10"
             /> */}
+            <div style={{display:"flex",justifyContent:"flex-end"}}>
+            <div className="inverted" >
+                <img
+                  src={testimonial.commaLogo}
+                  alt=""
+                  className=" ml-auto  sm:w-16 md:w-20 lg:w-24"
+                />
+                </div>
+              </div>
             <div className="p-4 h-full flex flex-col justify-between">
              
-                <div className="commatop flex items-center" style={{display:"flex",padding:"0px 2px",overflow:"visible"}}>
+                <div className=" flex items-center" >
                   <div>
                   <img
                     src={testimonial.logo}
@@ -227,13 +236,7 @@ const TestimonialSlider = () => {
                     <h3 className="text-lg" style={{fontWeight:"700",color:"#000"}}>{testimonial.name}</h3>
                     <p className="text-gray-600">{testimonial.title}</p>
                   </div>
-                  <div className="" style={{overflow:"visible",width:"44px",height:"44px",position:"relative"}} >
-                <img
-                  src={testimonial.commaLogo}
-                  alt=""
-                  className=" ml-auto  sm:w-16 md:w-20 lg:w-24" style={{width:"100%",height:"100%",position:"absolute"}}
-                />
-                </div>
+                 
                 </div>
                 
              
