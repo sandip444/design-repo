@@ -125,9 +125,10 @@ export const task_list = [
     },
     {
         task_number: '120',
-        task_name: 'Project Launched',
+        task_name: 'Projects Launched',
     },
     {
+        
         task_number: '110',
         task_name: 'Happy Client',
     },

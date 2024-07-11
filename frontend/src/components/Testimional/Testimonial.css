@@ -84,7 +84,8 @@
   background-color: #FAFAFA;
   padding: 2rem;
   position: relative;
-  padding :10px 120px !important;
+  /* padding :10px 120px !important; */
+  padding :10px 40px !important;
 }
 .slick-slider{
   border: 1px solid rgba(239, 240, 246, 1);
@@ -274,12 +275,16 @@
   .widthInc {
     width: 6rem !important;
   }
+   .FlexCol {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
   .widthInc {
     width: 250px !important;
-    height: 42px;
+  height: 42px;
   }
 
   .FlexCol {

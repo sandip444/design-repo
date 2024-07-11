@@ -153,7 +153,7 @@ const TestimonialSlider = () => {
             className="testimonial-slide flex flex-col md:flex-row items-center justify-center" style={{padding:"22px 80px 22px 22px"}}
 
           >
-            <div style={{ display: "flex",gap:"10px" }} className="FlexCol">
+            <div className="FlexCol" style={{ display: "flex",gap:"10px" }} >
               {/* Video Container */}
               <div className="video-container w-full md:w-3/5">
                 <YouTubeEmbed embedId={testimonial.videoId} />
