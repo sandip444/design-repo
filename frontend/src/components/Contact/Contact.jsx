@@ -111,7 +111,7 @@ const Contact = () => {
               ></textarea>
               <label htmlFor="description">Description</label>
             </div>
-            <div className="button-container" style={{marginBottom:"1px"}}>
+            <div className="button-container" style={{marginBottom:"30px"}}>
               <button type="submit" style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}}>
                 Submit{" "}
                 <span>
