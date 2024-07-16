@@ -100,7 +100,7 @@ const Contact = () => {
                 <label htmlFor="phone">Phone Number</label>
               </div>
             </div>
-            <div className="form-group font-inter">
+            <div className="HtInc form-group font-inter" style={{height:"130px !important"}}>
               <textarea
                 id="description"
                 name="description"
@@ -111,7 +111,7 @@ const Contact = () => {
               ></textarea>
               <label htmlFor="description">Description</label>
             </div>
-            <div className="button-container" style={{marginBottom:"30px"}}>
+            <div className="button-container" style={{marginTop:"40px"}}>
               <button type="submit" style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}}>
                 Submit{" "}
                 <span>
