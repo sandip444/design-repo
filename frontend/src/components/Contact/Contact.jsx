@@ -5,6 +5,10 @@ import FeedbackForm from "../Feedback/Feedback";
 import axios from "axios";
 import Starbg from "../../icons/stars.svg";
 import contactimage from "../../icons/Contact Us.svg";
+import DescriptionBox from './DescriptionBox'; 
+import RightArrow from "../../icons/FocusRight.svg";
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -108,15 +112,16 @@ const Contact = () => {
                 placeholder=" "
                 value={formData.description}
                 onChange={handleChange}
-              ></textarea>
+                ></textarea>
               <label htmlFor="description">Description</label>
             </div>
+                <DescriptionBox/>
             <div className="button-container" style={{marginTop:"40px"}}>
-              <button type="submit" style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}}>
-                Submit{" "}
-                <span>
+              <button type="submit" className="nav-btn pr-[5px] pl-4 py-2 rounded-full flex items-center font-red-rose" style={{color:"rgb(255,255,255,1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",display:"flex",gap:"6px", backgroundImage:`url(${Starbg})`}}>
+                Submit{" "} <img src={RightArrow} style={{ stroke: "#FFF", }} />
+                {/* <span>
                   <MdArrowForwardIos />
-                </span>
+                </span> */}
               </button>
             </div>
           </form>
@@ -126,7 +131,9 @@ const Contact = () => {
       </div>
       </div>
     </div>
+    
   );
+  
 };
 
 export default Contact;

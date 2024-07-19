@@ -1,8 +1,8 @@
 import React from 'react'
 import WebApp from "../../icons/ServiceImg2.png";
 import WebLanding from "../../icons/ServiceImg1.png";
-import MobileApp from "../../assets/mobileApp.png"
-import ServicesImage from "../../assets/service.png"
+import MobileApp from "../../icons/Mobile App.png";
+import ServicesImage from "../../assets/service.png";
 import "./Services.css";
 
 const Services = () => {
@@ -31,7 +31,7 @@ const Services = () => {
         </div>
         <div className="border border-[#E1E1E1] widthDec p-4 rounded-lg flex-1 px-5 py-4 shadow-drop-custom">
           <div className="flex items-center mb-4" style={{height:"200px",display:"flex",justifyContent:"center"}}>
-            <img src={MobileApp} alt="Mobile App" className="w-12 h-12 mr-4" />
+            <img src={MobileApp} alt="Mobile App" className="w-12 h-12 mr-4" style={{width:"100%",height:"100%"}}/>
           </div>
             <h5 className="text-lg font-semibold">Mobile App</h5>
           <p className='text-[#667085] text-sm'>Leveraging my expertise in iOS and Android, I'll elevate your application by creating interactive, user-friendly Android apps with Material Design and sleek, minimal iOS interfaces aligned with Apple's design language.</p>

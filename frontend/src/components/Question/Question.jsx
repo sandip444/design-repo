@@ -34,11 +34,11 @@ const Question = () => {
         {/* <button >Read More</button> */}
 
 
-        <div className="PortfolioBtn" style={{ display: "flex", justifyContent: "center" }}>
-         <button onClick={handleButton} style={{padding:"4px 8px 4px 16px",backgroundColor:"#111522",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",display:"flex",gap:"6px", backgroundImage:`url(${Starbg})`}}
+        <div className="PortfolioBtn" style={{ display: "flex", justifyContent: "center",width:"225px" }}>
+         <button onClick={handleButton} style={{padding:"4px 8px 4px 16px",backgroundColor:"#111522",fontFamily:"Red Rose",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",display:"flex",gap:"9px", backgroundImage:`url(${Starbg})`}}
           // className="view-all-button bg-black text-white py-2 px-4 rounded-full relative z-10 mx-auto block md:inline-block"
           >
-            Load More <img src={moreicon} style={{ stroke: "#FFF", }}></img>
+            Load More <div height="42px" width="42px"> <img src={moreicon} style={{ stroke: "#FFF", }}></img></div>
             {/* <span className="ml-2"></span> */}
             </button>
            

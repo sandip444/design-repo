@@ -13,7 +13,7 @@
   margin-bottom: 30px;
   /* margin-left: 22px; */
   margin-top: -38px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   /* color: #2c2c2c; */
 }
 
@@ -220,13 +220,11 @@
 
 
 
-/* @media  (max-width: 768px){
-    .contact-section::before {
-       Upper ellipse image
-      top: 79px; Adjust positioning
-      left: 38%;
+@media  (max-width: 768px){
+    .contact{
+      padding: 0px 60px;
     }
-} */
+}
 
 /* 541-762 */
 /*   

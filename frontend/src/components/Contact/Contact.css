@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 100vh;
     /* Full viewport height */
-    padding: 0 40px;
+    padding: 0 100px;
     /* Space around content */
     box-sizing: border-box;
     /* Include padding in width calculation */
@@ -150,6 +150,9 @@ textarea {
 
 .HtInc{
     height: 130px !important;
+    resize: none;
+    overflow: hidden;
+    
 }
 
 /* Focus styles for input and textarea */
@@ -164,7 +167,7 @@ textarea:focus {
 label {
     position: absolute;
     /* Absolute positioning for label */
-    top: 16px;
+    top: 18px;
     /* Distance from input field */
     left: 5px;
     /* Distance from input field */
@@ -174,7 +177,7 @@ label {
     /* Smooth transitions */
     background-color: white;
     /* White background for visibility */
-    padding: 0 5px;
+    padding: 0 1px;
     /* Padding around text */
     font-size: 16px;
     font-weight: 400;

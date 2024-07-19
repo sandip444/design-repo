@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
   text-align: center;
-  padding: 10px 60px;
+  padding: 10px 120px;
   position: relative;
 }
 
@@ -34,7 +34,21 @@
 .about-left h2 {
   font-size: 36px;
   margin-bottom: 30px;
-  padding-top: 30px;
+  padding-top: 60px;
+}
+.comp{
+  width:  48px;
+height:  48px;
+padding: 12px ;
+gap: 10px;
+border-radius: 80px;
+opacity: 0px;
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2)
+}
+.comp img{
+ width: 24px;
+ height: 24px;
 }
 
 .about-container {
@@ -49,13 +63,14 @@
   align-items: center;
   /* Center contents vertically */
   text-align: justify;
+  border: 1px solid rgba(229, 228, 221, 1);
   border-radius: 30px;
 }
 
 .about-left {
   flex: 1;
   /* Take up 50% of the container */
-  padding: 0 40px;
+  padding: 0 42px;
 }
 
 .about-left p {
@@ -91,6 +106,7 @@
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .about-link a {
