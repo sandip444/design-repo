@@ -84,7 +84,8 @@
   background-color: #FAFAFA;
   padding: 2rem;
   position: relative;
-  padding :48px !important;
+  /* padding :10px 120px !important; */
+  padding :10px 40px !important;
 }
 .slick-slider{
   border: 1px solid rgba(239, 240, 246, 1);
@@ -217,6 +218,29 @@
 .horizontal-scroll-container::-webkit-scrollbar {
   display: none;
 }
+/* .rightimage{
+  overflow: visible;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  
+} */
+
+.inverted{
+  
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top:2%;
+  overflow: visible;
+}
+/* .inverted img{
+  position: absolute;
+            right: -25px; /* Adjust this value for how much the image should overflow */
+            /* top: 50%;
+            transform: translateY(-50%);
+   
+}  */
 
 .text-head {
   display: flex;
@@ -245,15 +269,71 @@
     gap: 12px;
 }
 @media (max-width: 480px) {
+  .testimonial-slide{
+    padding: 0px;
+  }
+  .testimonial-slider {
+    padding :10px 10px !important;
+  }
   .widthInc {
     width: 6rem !important;
   }
+   .FlexCol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* @media (max-width: 580px){
+  .testimonial-slide{
+    padding: 0px;
+  }
+  .video-container{
+    height: 220px;
+  }
+  .video-responsive {
+    height: 100%;
+  }
+  .video-responsive iframe{
+    position: static;
+    height: 0px;
+  }
+} */
+@media only screen and (min-width:650px) and (max-width:700px) {
+  .video-responsive {
+    height: 400px !important;
+  }
+  .video-responsive iframe{
+    /* position: static; */
+    height: 400px !important;
+  }
+  
+}
+@media only screen and (min-width:500px) and (max-width:650px) {
+  .video-responsive {
+    height: 292px !important;
+  }
+  .video-responsive iframe{
+    /* position: static; */
+    height: 290px !important;
+  }
+  
+}
+@media only screen and (min-width:375px) and (max-width:500px) {
+  .video-responsive {
+    height: 200px !important;
+    padding-bottom: 10px;
+  }
+  .video-responsive iframe{
+    /* position: static; */
+    height: 200px !important;
+  }
+  
 }
 
 @media (max-width: 768px) {
   .widthInc {
     width: 250px !important;
-    height: 42px;
+  height: 42px;
   }
 
   .FlexCol {
@@ -261,3 +341,24 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 900px) {
+  .testimonial-slider {
+    padding :10px 60px !important;
+  }
+  .FlexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-container{
+    width: 100% !important;
+  }
+  .FlexProp{
+    width: 100% !important;
+  }
+  
+ }
+
+

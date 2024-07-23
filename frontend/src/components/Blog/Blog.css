@@ -1,116 +1,128 @@
 .blog {
-    width: 100%;
-    min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.blog {
+  padding: 0 120px !important;
+}
+
+.blog h1 {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+/* Container for blog items */
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual blog box styling */
+.blog-box {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 10px);
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image container */
+.blog-imgHome {
+  /* width: 420px; */
+  height: 191px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 26px;
+  background: #eaeaea;
+}
+
+.blog-img img {
+  width: 375px;
+  height: auto;
+}
+
+/* Professional info styling */
+.blog-flex {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.prefessional {
+  display: flex;
+  gap: 20px;
+}
+
+/* Title and description styling */
+.title {
+  padding: 20px;
+  text-align: left;
+}
+
+.title h2 {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.title p {
+  font-size: 1em;
+  color: #666;
+  margin: 0 0 20px;
+}
+
+
+
+
+/* Read more link styling */
+.blog a {
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.blog a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+  .blog {
+    padding: 0 60px !important;
   }
-  
-  .blog h1 {
-    text-align: center;
-    margin: 50px 20px;
-  }
-  
-  /* Container for blog items */
+}
+
+
+
+@media (max-width: 768px) {
   .blog-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-  }
-  
-  /* Individual blog box styling */
-  .blog-box {
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 10px);
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
   }
 
-  /* Image container */
+  .blog-box {
+    flex: 1 1 100%;
+  }
+
   .blog-imgHome {
-    /* width: 420px; */
+    /* width: 356px; */
     height: 191px;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 26px;
     background: #eaeaea;
- }
-  
-  .blog-img img {
-    width: 375px;
-    height: auto;
   }
-  
-  /* Professional info styling */
-  .blog-flex {
-    width: 100%;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9em;
-    border-bottom: 1px solid #eaeaea;
-  }
-  
-  .prefessional {
-    display: flex;
-    gap: 20px;
-  }
-  
-  /* Title and description styling */
-  .title {
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .title h2 {
-    font-size: 1.5em;
-    margin: 0 0 10px;
-    color: #333;
-  }
-  
-  .title p {
-    font-size: 1em;
-    color: #666;
-    margin: 0 0 20px;
-  }
-
-
-
-  
-  /* Read more link styling */
-  .blog a {
-    font-size: 1em;
-    color: black;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    transition: color 0.3s ease;
-  }
-  
-  .blog a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .blog-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .blog-box {
-      flex: 1 1 100%;
-    }
-    .blog-imgHome {
-      /* width: 356px; */
-      height: 191px;
-      -o-object-fit: cover;
-      object-fit: cover;
-      border-radius: 26px;
-      background: #eaeaea;
-   }
-  }
-  
+}

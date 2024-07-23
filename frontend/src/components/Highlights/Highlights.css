@@ -219,6 +219,17 @@
   /* background-color: red; */
 }
 
+.PortfolioBtn button img{
+width: 35px;
+height: 35px;
+}
+.Prtfoliotxt{
+  font-weight: 700px;
+  line-height: 72.8px;
+  text-align: center;
+  color: rgba(17, 21, 34, 1);
+}
+
 .highlights .highlights-container {
   display: flex;
   flex-wrap: wrap;
@@ -229,7 +240,7 @@
 .highlights .highlights-box {
   background: #fff;
   overflow: hidden;
-  width: calc(50% - 15px);
+  width: calc(47.3% - 15px);
   margin-bottom: 30px;
 }
 
@@ -246,9 +257,10 @@
 }
 
 .highlights .highlights-title {
-  padding: 20px;
+  width: 556px;
+  padding: 0px 0px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -265,7 +277,19 @@
   width: fit-content;
   padding: 10px 30px;
 }
-
+.Arrow{
+ width: 72px;
+ height: 48px;
+ border-radius: 70px;
+  border: 1px solid #010205;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Arrow img{
+  width: 24px;
+  height: 24px;
+}
 @media only screen and (min-width: 380px) and (max-width:675px) {
   .highlights .highlights-box {
     width: 100%;
@@ -282,3 +306,5 @@
     /* margin-left: -56px; */
   }
 }
+
+  

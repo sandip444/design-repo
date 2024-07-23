@@ -1,8 +1,8 @@
 footer {
-    background-color:#111522;
+    background-color: #111522;
     color: white;
     width: 100%;
-    padding: 40px;
+    padding: 10px 40px;
     box-sizing: border-box;
 }
 
@@ -20,15 +20,16 @@ footer {
 
 .footer-left {
     text-align: left;
-    color: 
-    #D0D5DD;
+    color:
+        #D0D5DD;
 }
 
 .footer-right {
     text-align: right;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
+    align-items: flex-end;
+    /* Align items to the right */
 }
 
 .footer-left ul,
@@ -38,17 +39,18 @@ footer {
     list-style: none;
     margin: 20px 0;
     font-size: 18px;
-   
+
 }
 
-.footer-left ul li a{
-    color:#EAECF0;
-    
+.footer-left ul li a {
+    color: #EAECF0;
+
 }
-.email img{
+
+.email img {
     position: relative;
     top: 24px;
-    right:24px;
+    right: 24px;
 }
 
 footer a {
@@ -82,10 +84,15 @@ footer hr {
     text-align: right;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
+    align-items: flex-end;
+    /* Align items to the right */
 }
-@media screen and (min-width: 375px) and (max-width: 768px) { 
-    
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .footer {
+        padding: 10px 10px;
+    }
+
     .footer-left ul,
     .footer-right .brand ul {
         display: flex;
@@ -94,15 +101,21 @@ footer hr {
         list-style: none;
         margin: 20px 0;
         font-size: 18px;
-    }  
-    .footer-content{
+    }
+
+    .footer-content {
         display: flex;
         flex-direction: column;
     }
-    .footer-right{
+
+    .footer-right {
         display: flex;
         align-items: center;
     }
 }
 
-    
+@media (max-width:900px) {
+    .footer {
+        padding: 10px 10px;
+    }
+}

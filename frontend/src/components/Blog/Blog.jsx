@@ -45,7 +45,7 @@ const Blog = () => {
                 </button>
               </div>
               <div className="time">
-                <p className="text-xs text-gray-600">{item.time} <span className="text-[10px]">min read</span></p>
+                <p className="text-xs text-gray-600">{item.time} <span className="text-[10px]"> read</span></p>
               </div>
             </div>
 

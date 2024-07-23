@@ -1,7 +1,7 @@
 .question {
     width: 100%;
-    min-height: 100vh;
-    padding: 30px 60px;
+    /* min-height: 100vh; */
+    padding: 10px 60px;
     margin-top: 26px;
 }
 
@@ -12,6 +12,7 @@
     font-size: 42px;
     font-weight: 700;
     line-height: 58px;
+    padding-top:26px;
    color:  rgba(17, 21, 34, 1);
 }
 
@@ -77,4 +78,10 @@
         width: 100% !important;
     }
   }
+  @media only screen and (min-width:768px) and (max-width: 900px) {
+    .contact-left{
+        margin-left: 18px;
+    }
+  }
+
 

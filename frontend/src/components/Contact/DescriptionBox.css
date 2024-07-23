@@ -1,0 +1,18 @@
+.description-box {
+    width: 100%; /* Adjust width as needed */
+    height: 130px;
+    resize: none; /* Prevent resizing */
+    overflow-y: scroll; /* Allow vertical scrolling */
+  }
+  
+  /* Hide scrollbar for WebKit browsers */
+  .description-box::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .description-box {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  

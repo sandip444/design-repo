@@ -60,13 +60,49 @@ button {
 .available-button {
   width: auto;
   background-color: white;
-  color: black;
+  color: rgba(17,21,34,1);
   border: 1px solid #E1E1E1;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
 }
+.IconLogos{
+  height: 32px;
+  display: flex;
+  gap: 12px;
+}
+.IconLogos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adjust to your needs (cover, contain, fill, etc.) */
+}
+.IconLogos .Icon2{
+  width: 26px;
+  height: 26px;
 
+}
+.IconLogos .Icon4{
+  width: 20px;
+  height: 27px;
+}
+.IconLogos .Icon1{
+  width: 25.86px;
+  height: 25.86px;
+}
+.IconLogos .Icon3{
+  width: 27.36px;
+  height: 27.36px;
+}
+.headerpara{
+  height:102px;
+  font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 33.6px !important;
+text-align: center;
+color: rgba(111, 108, 144, 1);
+
+}
 button span {
   margin-left: 10px;
   display: inline-flex;

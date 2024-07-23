@@ -15,10 +15,9 @@ import humanicon from "../../icons/testimonial description icon.png";
 import testimonialTextTitle from "../../icons/testimonial text title.png";
 
 const YouTubeEmbed = ({ embedId }) => (
-  <div className="video-responsive">
+  <div className="video-responsive" style={{height:"457px",width:"676px !important",display:"flex"}}>
     <iframe
-      width="560"
-      height="315"
+     style={{width:"100%",height:"457px",margin:"0 auto"}}
       src={`https://www.youtube.com/embed/${embedId}`}
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -62,6 +61,7 @@ const testimonialReview = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco",
     rating: 5.0,
     bottomLogo: ReviewBottom,
+    commaLogo : LowerComma,
   },
   {
     logo: testimonial2,
@@ -70,6 +70,7 @@ const testimonialReview = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco",
     rating: 4.5,
     bottomLogo: ReviewBottom,
+    commaLogo : LowerComma,
   },
   {
     logo: testimonial1,
@@ -78,6 +79,7 @@ const testimonialReview = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco",
     rating: 4.0,
     bottomLogo: ReviewBottom,
+    commaLogo : LowerComma,
   },
   {
     logo: testimonial2,
@@ -86,6 +88,7 @@ const testimonialReview = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco",
     rating: 4.5,
     bottomLogo: ReviewBottom,
+    commaLogo : LowerComma,
   },
   {
     logo: testimonial1,
@@ -94,6 +97,7 @@ const testimonialReview = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation ullamco",
     rating: 4.0,
     bottomLogo: ReviewBottom,
+    commaLogo : LowerComma,
   },
 ];
 
@@ -114,7 +118,7 @@ const TestimonialSlider = () => {
     ),
     // customPaging: (i) => <div className="custom-dot"><img src={""}></img></div>
   };
-
+  console.log(testimonialReview);
   return (
     <div className="testimonial-slider bg-[#FAFAFA]">
       <div className="flex flex-col items-center justify-center">
@@ -149,7 +153,7 @@ const TestimonialSlider = () => {
             className="testimonial-slide flex flex-col md:flex-row items-center justify-center" style={{padding:"22px 80px 22px 22px"}}
 
           >
-            <div style={{ display: "flex",gap:"10px" }} className="FlexCol">
+            <div className="FlexCol" style={{ display: "flex",gap:"10px" }} >
               {/* Video Container */}
               <div className="video-container w-full md:w-3/5">
                 <YouTubeEmbed embedId={testimonial.videoId} />
@@ -180,6 +184,7 @@ const TestimonialSlider = () => {
                   {"☆".repeat(5 - Math.floor(testimonial.rating))}
                   <span className="text-gray-700 ml-2">{testimonial.rating}</span>
                 </div>
+               
               </div>
             </div>
           </div>
@@ -196,7 +201,8 @@ const TestimonialSlider = () => {
           Positive Feedback from Past Clients
         </h3>
       </div>
-      <div className="horizontal-scroll-container overflow-x-auto whitespace-nowrap py-4">
+      
+      <div className=" horizontal-scroll-container overflow-x-auto whitespace-nowrap py-4" style={{position:"relative"}}>
         {testimonialReview.map((testimonial, index) => (
           <div
             key={index}
@@ -207,9 +213,18 @@ const TestimonialSlider = () => {
               alt=""
               className="absolute bottom-12 -right-8 w-4 h-4 md:w-8 md:h-8 lg:w-10 lg:h-10"
             /> */}
+            <div style={{display:"flex",justifyContent:"flex-end"}}>
+            <div className="inverted" >
+                <img
+                  src={testimonial.commaLogo}
+                  alt=""
+                  className=" ml-auto  sm:w-16 md:w-20 lg:w-24"
+                />
+                </div>
+              </div>
             <div className="p-4 h-full flex flex-col justify-between">
              
-                <div className="flex items-center" style={{display:"flex",padding:"0px 2px"}}>
+                <div className=" flex items-center" >
                   <div>
                   <img
                     src={testimonial.logo}
@@ -221,13 +236,14 @@ const TestimonialSlider = () => {
                     <h3 className="text-lg" style={{fontWeight:"700",color:"#000"}}>{testimonial.name}</h3>
                     <p className="text-gray-600">{testimonial.title}</p>
                   </div>
+                 
                 </div>
                 
              
               <p className="text-gray-700 text-base mt-2 text-wrap">
                   {testimonial.text}
                 </p>
-              <div className="flex items-center mt-4">
+              <div className="commaPosition flex items-center mt-4">
                 <div className="text-yellow-500">
                   {"★".repeat(Math.floor(testimonial.rating))}
                   {"☆".repeat(5 - Math.floor(testimonial.rating))}
@@ -238,7 +254,9 @@ const TestimonialSlider = () => {
                   alt=""
                   className="ml-auto  sm:w-16 md:w-20 lg:w-24"
                 />
+                
               </div>
+             
             </div>
           </div>
         ))}

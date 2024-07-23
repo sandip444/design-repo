@@ -15,7 +15,19 @@ nav .logo {
   width: 42px;
   height: 42px;
 }
-
+.NavLogos{
+  display: flex;
+  gap: 16px;
+}
+.NavLogos li{
+  padding: 4px 10px;
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-radius: 50%;
+}
+.NavLogos li img{
+  width: 24px;
+  height: 24px;
+}
 nav ul {
   display: flex;
   align-items: center;
@@ -25,9 +37,10 @@ nav ul {
   padding: 0;
 }
 
-nav ul p {
+nav ul .AllCateg {
   font-size: 16px;
   font-weight: 700;
+line-height: 22.4px;
   color: #111522;
   margin: 0;
 }
@@ -37,11 +50,12 @@ nav ul li {
   align-items: center;
   gap: 16px;
   height: 44px;
+  width: 44px;
 }
 
 nav ul li img {
-  width: 44px;
-  height: 44px;
+  width: 24px;
+  height: 24px;
   transition: all 0.3s ease;
 }
 
@@ -76,4 +90,10 @@ nav ul li img {
   text-align: center;
   color: #000000;
   background-color: transparent;
+}
+@media only screen and  (min-width:768) and (max-width:900) {
+  .blockText{
+    display:block;
+  }
+  
 }

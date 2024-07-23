@@ -94,7 +94,7 @@ export const digital_list=[
         id: 2,
         img: uxstrategy,
         name: 'UX Strategy',
-        description:'A comptehensive UX strategy involves research, analysis, architecture, and continuous testing'  
+        description:'A comprehensive UX strategy involves research, analysis, architecture, and continuous testing'  
     },
     {
         id: 3,
@@ -125,9 +125,10 @@ export const task_list = [
     },
     {
         task_number: '120',
-        task_name: 'Project Launched',
+        task_name: 'Projects Launched',
     },
     {
+        
         task_number: '110',
         task_name: 'Happy Client',
     },

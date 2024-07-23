@@ -60,3 +60,15 @@
     margin-top: 24px;
   }
 }
+@media (max-width:485px){
+
+}
+@media (max-width:485px){
+.spacing{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+}

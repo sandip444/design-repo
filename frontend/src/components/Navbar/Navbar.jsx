@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { assets } from "../../assets/assets";
-import { MdArrowForwardIos } from "react-icons/md";
+// import { MdArrowForwardIos } from "react-icons/md";
 import { CgMenuMotion } from "react-icons/cg";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { useNavigate} from "react-router-dom"
 // import { createBrowserHistory } from 'history';
 import "./Navbar.css";
 import Starbg from "../../icons/stars.svg";
+import RightArrow from "../../icons/FocusRight.svg";
 
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -52,8 +53,8 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden md:flex items-center space-x-4 text-sm md:text-base" style={{height: "50px",marginTop:"7px"}}>
-          <p className="hidden sm:block">All Categories</p>
-
+          <div className="AllCateg font-red-rose">All Categories</div>
+            <div className="NavLogos">
           <li
             onMouseEnter={() => handleMouseEnter("Globe")}
             onMouseLeave={handleMouseLeave}
@@ -98,14 +99,12 @@ const Navbar = () => {
               className="h-6 w-6 md:h-8 md:w-8"
             />
           </li>
-          <li>
-            <button className="nav-btn pr-[5px] pl-4 py-2 rounded-full flex items-center" style={{backgroundImage:`url(${Starbg})`}}>
-              Schedule a call 
-              <span className="ml-2">
-                <MdArrowForwardIos />
-              </span>
+          </div>
+          <div  height="50px" style={{display:"flex",justifyContent:"space-between",padding:"1px",borderRadius:"50px",backgroundColor:"#111522"}}>
+            <button className="nav-btn pr-[5px] pl-4 py-2 rounded-full flex items-center font-red-rose" style={{color:"rgb(255,255,255,1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",display:"flex",gap:"6px", backgroundImage:`url(${Starbg})`}}>
+              Schedule a call <img src={RightArrow} style={{ stroke: "#FFF", }} />
             </button>
-          </li>
+          </div>
         </ul>
         </div>
       </nav>

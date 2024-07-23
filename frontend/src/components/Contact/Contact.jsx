@@ -4,6 +4,11 @@ import { MdArrowForwardIos } from "react-icons/md";
 import FeedbackForm from "../Feedback/Feedback";
 import axios from "axios";
 import Starbg from "../../icons/stars.svg";
+import contactimage from "../../icons/Contact Us.svg";
+import DescriptionBox from './DescriptionBox'; 
+import RightArrow from "../../icons/FocusRight.svg";
+
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -48,7 +53,7 @@ const Contact = () => {
         <div  className="contact-right">
           <form onSubmit={handleSubmit}>
             <div className="multi-fields">
-              <div className="form-group">
+              <div className="form-group font-inter">
                 <input
                   type="text"
                   id="firstName"
@@ -60,7 +65,7 @@ const Contact = () => {
                 />
                 <label htmlFor="firstName">First Name</label>
               </div>
-              <div className="form-group">
+              <div className="form-group font-inter">
                 <input
                   type="text"
                   id="lastName"
@@ -74,7 +79,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="multi-fields">
-              <div className="form-group">
+              <div className="form-group font-inter">
                 <input
                   type="email"
                   id="email"
@@ -86,7 +91,7 @@ const Contact = () => {
                 />
                 <label htmlFor="email">Email</label>
               </div>
-              <div className="form-group">
+              <div className="form-group font-inter ">
                 <input
                   type="text"
                   id="phone"
@@ -99,7 +104,7 @@ const Contact = () => {
                 <label htmlFor="phone">Phone Number</label>
               </div>
             </div>
-            <div className="form-group">
+            <div className="HtInc form-group font-inter" style={{height:"130px !important"}}>
               <textarea
                 id="description"
                 name="description"
@@ -107,22 +112,28 @@ const Contact = () => {
                 placeholder=" "
                 value={formData.description}
                 onChange={handleChange}
-              ></textarea>
+                ></textarea>
               <label htmlFor="description">Description</label>
             </div>
-            <div className="button-container" style={{marginBottom:"1px"}}>
-              <button type="submit" style={{padding:"4px 4px 4px 16px",backgroundColor:"rgba(17, 21, 34, 1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",backgroundImage:`url(${Starbg})`}}>
-                Submit{" "}
-                <span>
+                <DescriptionBox/>
+            <div className="button-container" style={{marginTop:"40px"}}>
+              <button type="submit" className="nav-btn pr-[5px] pl-4 py-2 rounded-full flex items-center font-red-rose" style={{color:"rgb(255,255,255,1)",fontSize:"16px",lineHeight:"20px",fontWeight:"700px",display:"flex",gap:"6px", backgroundImage:`url(${Starbg})`}}>
+                Submit{" "} <img src={RightArrow} style={{ stroke: "#FFF", }} />
+                {/* <span>
                   <MdArrowForwardIos />
-                </span>
+                </span> */}
               </button>
             </div>
           </form>
         </div>
+      <div style={{width:"100%",display:"flex",justifyContent:"center"}}>
+      <img src={contactimage}></img>
+      </div>
       </div>
     </div>
+    
   );
+  
 };
 
 export default Contact;
